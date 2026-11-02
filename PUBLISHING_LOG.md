@@ -9,3 +9,5 @@ Prepared for public publication at `haideraqeeb-intellifai/pika-lora-quantizatio
 - Included: both completed five-video quantization reports; canonical source and generated media; exact prompts and requests; repeated and failed/preflight runs; complete metrics and timing evidence; replay, verification and report scripts; a partial EasyCache snapshot of 7/10 terminal runs.
 - Excluded: all model parameters, external private application checkout, reproducible installed dependencies, browser session data, host-access settings, unrelated storage listings, active uncompleted runs and verified runtime duplicates. See `PUBLICATION_INVENTORY.json`.
 - No project license has been invented; model terms and runtime access requirements are documented.
+
+Public repository created at **2026-11-03T03:20:11+05:30 (Asia/Calcutta)** / `2026-11-02T21:50:11Z` UTC. Owner and public visibility were verified before the initial push.
