@@ -1,0 +1,290 @@
+[
+  {
+    "time_utc": "2026-11-02T17:43:22Z",
+    "before": "red-fox/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:43:23Z",
+    "before": "red-fox/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:43:24Z",
+    "before": "red-fox/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:46:30Z",
+    "before": "red-fox/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:46:31Z",
+    "before": "red-fox/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:46:33Z",
+    "before": "red-fox/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:49:44Z",
+    "before": "red-fox/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 4, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:49:45Z",
+    "before": "red-fox/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:49:46Z",
+    "before": "red-fox/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:49:47Z",
+    "before": "red-fox/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:52:58Z",
+    "before": "bengal-tiger/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:52:59Z",
+    "before": "bengal-tiger/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:53:00Z",
+    "before": "bengal-tiger/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:56:11Z",
+    "before": "bengal-tiger/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 5, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:56:12Z",
+    "before": "bengal-tiger/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:56:13Z",
+    "before": "bengal-tiger/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:56:14Z",
+    "before": "bengal-tiger/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:59:25Z",
+    "before": "bengal-tiger/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 4, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:59:26Z",
+    "before": "bengal-tiger/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:59:27Z",
+    "before": "bengal-tiger/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T17:59:28Z",
+    "before": "bengal-tiger/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:02:38Z",
+    "before": "african-elephant/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:02:40Z",
+    "before": "african-elephant/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:02:41Z",
+    "before": "african-elephant/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:05:51Z",
+    "before": "african-elephant/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:05:52Z",
+    "before": "african-elephant/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:05:53Z",
+    "before": "african-elephant/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:09:05Z",
+    "before": "african-elephant/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:09:06Z",
+    "before": "african-elephant/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:09:07Z",
+    "before": "african-elephant/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:12:17Z",
+    "before": "scarlet-macaw/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:12:18Z",
+    "before": "scarlet-macaw/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:12:19Z",
+    "before": "scarlet-macaw/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:15:30Z",
+    "before": "scarlet-macaw/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:15:31Z",
+    "before": "scarlet-macaw/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:15:32Z",
+    "before": "scarlet-macaw/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:18:43Z",
+    "before": "scarlet-macaw/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:18:44Z",
+    "before": "scarlet-macaw/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:18:45Z",
+    "before": "scarlet-macaw/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:21:55Z",
+    "before": "barn-owl/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:21:56Z",
+    "before": "barn-owl/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:21:57Z",
+    "before": "barn-owl/bf16",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:25:08Z",
+    "before": "barn-owl/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:25:09Z",
+    "before": "barn-owl/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:25:10Z",
+    "before": "barn-owl/fp8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:28:22Z",
+    "before": "barn-owl/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:28:23Z",
+    "before": "barn-owl/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  },
+  {
+    "time_utc": "2026-11-02T18:28:24Z",
+    "before": "barn-owl/int8",
+    "gpu": "GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 0, 2",
+    "processes": ""
+  }
+]

@@ -1,0 +1,209 @@
+{
+  "target_uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+  "database": {
+    "host": "10.0.0.3",
+    "port": 5433,
+    "dbname": "main",
+    "user": "agent_ro",
+    "views": [
+      "observability.gateway_logs_all",
+      "observability.messages_all"
+    ]
+  },
+  "time_window": {
+    "start": "2026-10-29T14:40:12.478740+00:00",
+    "end": "2026-11-02T14:40:12.478740+00:00",
+    "hours": 96.0
+  },
+  "query_strategy": [
+    "messages_all exact uid with request_time window",
+    "gateway_logs_all exact uid variants with created_at window",
+    "workflow child uid prefix lookup only when exact gateway rows show /v1/workflow, bounded around workflow timestamps",
+    "optional normalized request.input.uid/response fallback inside bounded gateway window"
+  ],
+  "backend_messages": [
+    {
+      "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+      "app_name": "image2video_h3_turbo",
+      "code": "200",
+      "request_time": "2026-11-02T10:26:07.920645+00:00",
+      "server_start_time": "2026-11-02T10:27:40.587755+00:00",
+      "server_end_time": "2026-11-02T10:30:27.219380+00:00",
+      "host_name": "gpu5090-59",
+      "priority": 7,
+      "message": {
+        "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+        "webhook_url": "https://api-staging.ha.renderplatform.com/webhook",
+        "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same barn owl from <Picture 1> remains in the established podcast setting, retaining the exact face, hooked beak, pale facial disk and feather pattern, natural wing anatomy, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with <Picture 1>.\n\nFrom 00:00.000 onward, the barn owl delivers the supplied speech with clear, natural species-appropriate articulation. The upper and lower parts of the beak visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the beak returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.\n\nFrom 00:04.500 to 00:06.500, while continuing the speech articulation, one existing wing tip makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing wing tip makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the barn owl's natural wing tip anatomy and feathers.\n\nThe camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the barn owl's beak, throat, eyes, head and existing wings move; the camera, framing, background and props remain stationary.\n\nFrom 00:13.300 to 00:15.080, the barn owl smoothly returns its head, wings and posture to the exact neutral state of <Picture 2> while continuing any remaining speech articulation. Exactly one barn owl remains visible with consistent natural anatomy. No additional subjects, extra wings, duplicate props, captions, logos, watermarks or on-screen text appear.\n\noverall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.\n\nnon_diegetic_music: N/A",
+        "input_mode": "fl2v",
+        "image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/elara-the-barn-owl-01a17889-d2c4-71da-a015-61573fcb097a-headshot.jpg",
+        "last_image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/elara-the-barn-owl-01a17889-d2c4-71da-a015-61573fcb097a-headshot.jpg",
+        "reference_image_paths": [],
+        "reference_video_paths": [],
+        "reference_audio_paths": [],
+        "model": "pika_flex",
+        "lipsync_mode": false,
+        "audio_path": "https://s3.renderplatform.com/user-assets/preview/ffmpeg/animal-h3-turbo-fl2v-15s-audio-20261029-c12-s2.wav",
+        "lora": "none",
+        "ref_image_size": "match",
+        "width": 720,
+        "height": 1280,
+        "num_frames": 124,
+        "fps": 24.0,
+        "seed": 427739230855701667,
+        "num_inference_steps": 3,
+        "sampler_name": "MiniMaxH3TurboSampler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "diffusion_model": "int8_convrot",
+        "weight_dtype": "default",
+        "clip_device": "default",
+        "attention_backend": "sage2",
+        "step_accelerator": "none",
+        "use_easycache": false,
+        "use_sigma_shift": false,
+        "bit_depth": 8,
+        "container_format": "auto",
+        "codec": "auto",
+        "crf": 23,
+        "timeout_seconds": 9000,
+        "api_key": "[REDACTED]",
+        "request_time": "2026-11-02T05:26:07.920645-05:00"
+      },
+      "response": {
+        "request_time": "2026-11-02T05:26:07.920645-05:00",
+        "server_start_time": "2026-11-02T05:27:40.587755-05:00",
+        "server_end_time": "2026-11-02T05:30:27.219380-05:00",
+        "num_units": 1,
+        "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+        "status": true,
+        "code": 200,
+        "duration_seconds": 15.083333,
+        "out_path": "https://s3.renderplatform.com/user-assets/preview/generated_video/animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1.mp4",
+        "seed": 427739230855701667,
+        "effective": {
+          "input_mode": "fl2v",
+          "requested_width": 720,
+          "requested_height": 1280,
+          "native_width": 736,
+          "native_height": 1280,
+          "requested_frames": 360,
+          "effective_frames": 362,
+          "reference_images": 0,
+          "reference_videos": 0,
+          "reference_audios": 0,
+          "seed": 427739230855701667,
+          "optimization": {
+            "profile": "pika_flex",
+            "attention_backend": "sage2",
+            "step_accelerator": "none",
+            "approximate": true
+          },
+          "optimizer_parameters": {
+            "easycache": null,
+            "sol": null,
+            "spectrum": null
+          },
+          "diffusion_checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+          "model_revision": "0bd506d2e895983a9663037febda27aa3948cf48",
+          "lora": "pika_h3_flex_fl2va_comfy_bf16.safetensors",
+          "lora_revision": "Pika-Labs/Pika-H3-Flex@3ff166447d5edb1406107ab8370c42000ce173e4",
+          "lora_strength": 1.0,
+          "lora_low_vram": false,
+          "turbo_commit": null,
+          "sampler": "MiniMaxH3PikaSampler",
+          "steps": 3,
+          "denoise": 1.0,
+          "scheduler": "pika_knots",
+          "sigma_shift_video": 12.0,
+          "sigma_shift_audio": 3.0,
+          "output_frames": 362,
+          "fps": 24.0
+        },
+        "comfy_prompt_id": "e575a7de754447c385e0292389a64753",
+        "inference_time_seconds": 166.208,
+        "timings": {
+          "asset_preparation_seconds": 0.389,
+          "comfy_execution_seconds": 166.208,
+          "output_finalize_upload_seconds": 0.034,
+          "end_to_end_seconds": 166.632
+        },
+        "commit_id": "v4.9.129",
+        "out_path_cdn": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1.mp4"
+      }
+    }
+  ],
+  "gateway_logs": [
+    {
+      "kind": "gateway_downstream_submit",
+      "log_uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+      "topic": "image2video_h3_turbo",
+      "code": 200,
+      "priority": 7,
+      "x_load_test": null,
+      "created_at": "2026-11-02T10:26:07.920125+00:00",
+      "completed_at": "2026-11-02T10:26:07.921846+00:00",
+      "input_uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+      "template": null,
+      "input_prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same barn owl from <Picture 1> remains in the established podcast setting, retaining the exact face, hooked beak, pale facial disk and feather pattern, natural wing anatomy, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with <Picture 1>.\n\nFrom 00:00.000 onward, the barn owl delivers the supplied speech with clear, natural species-appropriate articulation. The upper and lower parts of the beak visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the beak returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.\n\nFrom 00:04.500 to 00:06.500, while continuing the speech articulation, one existing wing tip makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing wing tip makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the barn owl's natural wing tip anatomy and feathers.\n\nThe camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the barn owl's beak, throat, eyes, head and existing wings move; the camera, framing, background and props remain stationary.\n\nFrom 00:13.300 to 00:15.080, the barn owl smoothly returns its head, wings and posture to the exact neutral state of <Picture 2> while continuing any remaining speech articulation. Exactly one barn owl remains visible with consistent natural anatomy. No additional subjects, extra wings, duplicate props, captions, logos, watermarks or on-screen text appear.\n\noverall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.\n\nnon_diegetic_music: N/A",
+      "image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/elara-the-barn-owl-01a17889-d2c4-71da-a015-61573fcb097a-headshot.jpg",
+      "speech1": null,
+      "speech2": null,
+      "request": {
+        "input": {
+          "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+          "prompt": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same barn owl from <Picture 1> remains in the established podcast setting, retaining the exact face, hooked beak, pale facial disk and feather pattern, natural wing anatomy, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with <Picture 1>.\n\nFrom 00:00.000 onward, the barn owl delivers the supplied speech with clear, natural species-appropriate articulation. The upper and lower parts of the beak visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the beak returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.\n\nFrom 00:04.500 to 00:06.500, while continuing the speech articulation, one existing wing tip makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing wing tip makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the barn owl's natural wing tip anatomy and feathers.\n\nThe camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the barn owl's beak, throat, eyes, head and existing wings move; the camera, framing, background and props remain stationary.\n\nFrom 00:13.300 to 00:15.080, the barn owl smoothly returns its head, wings and posture to the exact neutral state of <Picture 2> while continuing any remaining speech articulation. Exactly one barn owl remains visible with consistent natural anatomy. No additional subjects, extra wings, duplicate props, captions, logos, watermarks or on-screen text appear.\n\noverall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.\n\nnon_diegetic_music: N/A",
+          "input_mode": "fl2v",
+          "image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/elara-the-barn-owl-01a17889-d2c4-71da-a015-61573fcb097a-headshot.jpg",
+          "last_image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/elara-the-barn-owl-01a17889-d2c4-71da-a015-61573fcb097a-headshot.jpg",
+          "model": "pika_flex",
+          "lipsync_mode": false,
+          "audio_path": "https://s3.renderplatform.com/user-assets/preview/ffmpeg/animal-h3-turbo-fl2v-15s-audio-20261029-c12-s2.wav",
+          "width": 720,
+          "height": 1280,
+          "fps": 24,
+          "seed": "427739230855701667",
+          "num_inference_steps": 3,
+          "denoise": 1,
+          "webhook_url": "https://api-staging.ha.renderplatform.com/webhook",
+          "trace_id": "b3fd825d3deb47ccb033f4081d3c60d9",
+          "parent_uid": "b3fd825d3deb47ccb033f4081d3c60d9"
+        }
+      },
+      "response": {
+        "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+        "code": 200,
+        "topic": "image2video_h3_turbo",
+        "status": true,
+        "priority": 7,
+        "gateway_url": "https://api-staging.ha.renderplatform.com",
+        "gateway_version": "d1e404c"
+      },
+      "metadata": {}
+    }
+  ],
+  "workflow_child_lookup": {
+    "ran": false,
+    "reason": "no workflow-shaped exact gateway rows",
+    "window_pad_minutes": 90,
+    "windows": [],
+    "gateway_rows": 0,
+    "backend_rows": 0
+  },
+  "errors": [],
+  "summary": {
+    "backend_rows": 1,
+    "gateway_rows": 1,
+    "template_call_found": false,
+    "rewrite_or_llm_call_found": false,
+    "gateway_downstream_submit_found": true,
+    "workflow_child_lookup_ran": false,
+    "workflow_child_gateway_rows": 0,
+    "workflow_child_backend_rows": 0
+  },
+  "gateway_time_window": {
+    "start": "2026-11-02T09:56:07.920645+00:00",
+    "end": "2026-11-02T11:00:27.219380+00:00",
+    "source": "backend timestamps plus padding"
+  }
+}

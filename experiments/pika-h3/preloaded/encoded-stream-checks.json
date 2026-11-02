@@ -1,0 +1,26 @@
+{
+  "red-fox": {
+    "bf16": {
+      "same_encoded_video_stream": true,
+      "previous": "SHA256=6a3ea090fd72d09753649aef601502a0b264dfa2e56fc979fb4cf37953d72534",
+      "current": "SHA256=6a3ea090fd72d09753649aef601502a0b264dfa2e56fc979fb4cf37953d72534"
+    },
+    "fp8": {
+      "same_encoded_video_stream": true,
+      "previous": "SHA256=d347d93f88734dca1f47dd9e3e74858f7eccdcf53160591d3b630bb0618a517b",
+      "current": "SHA256=d347d93f88734dca1f47dd9e3e74858f7eccdcf53160591d3b630bb0618a517b"
+    }
+  },
+  "bengal-tiger": {
+    "bf16": {
+      "same_encoded_video_stream": true,
+      "previous": "SHA256=a2df607dd7e9ee532acb05570a61fa7a93a974fe51886c70a1bb4e24b2e1b042",
+      "current": "SHA256=a2df607dd7e9ee532acb05570a61fa7a93a974fe51886c70a1bb4e24b2e1b042"
+    },
+    "fp8": {
+      "same_encoded_video_stream": true,
+      "previous": "SHA256=b0db777c374fa1a28e33381d98ad99cf95ae68163ada882ae4d068f404ce4234",
+      "current": "SHA256=b0db777c374fa1a28e33381d98ad99cf95ae68163ada882ae4d068f404ce4234"
+    }
+  }
+}

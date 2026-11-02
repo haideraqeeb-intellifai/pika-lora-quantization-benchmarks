@@ -1,0 +1,12 @@
+{
+  "snapshot_local": "2026-11-03T03:14:49.433181+05:30",
+  "source_files_verified": 763,
+  "python_files_parsed": 36,
+  "html_files_checked": 4,
+  "videos_with_audio_probed": 69,
+  "broken_static_links": [],
+  "credential_pattern_matches": [],
+  "model_weight_files": 0,
+  "easycache_terminal_runs_at_cutoff": 7,
+  "total_files_before_validation_record": 777
+}

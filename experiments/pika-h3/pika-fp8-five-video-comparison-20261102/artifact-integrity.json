@@ -1,0 +1,742 @@
+[
+  {
+    "path": "analyze.py",
+    "bytes": 6971,
+    "sha256": "2c3f1ef8b72f72884847a25c5df97d59713645b6983c9037c3355b8e804e4d53"
+  },
+  {
+    "path": "browser-validation.json",
+    "bytes": 289,
+    "sha256": "10fd569c7ca13df6d8926cfcb1a8eb34d3d3a3bd604f318ef53858f4275339c1"
+  },
+  {
+    "path": "comparison.html",
+    "bytes": 183035,
+    "sha256": "c7ba88a880e016c6fda731a1dfdd50e38e850debdae87c57ea286ccd33cdc5cf"
+  },
+  {
+    "path": "evidence/african-elephant/bf16-process.log",
+    "bytes": 7721,
+    "sha256": "13f98eba570ac5ed38d59de480678ad24f8b253bd3ee7e3c724bfe435432115f"
+  },
+  {
+    "path": "evidence/african-elephant/bf16-result.json",
+    "bytes": 23959,
+    "sha256": "65a61d5f77a12aaf55aa62d77c63a092ff1a3a5bf876c5212a83ce8a51915548"
+  },
+  {
+    "path": "evidence/african-elephant/bf16-workflow.json",
+    "bytes": 6191,
+    "sha256": "db4187c2f2b069962b8492f8855ec88a1841a3b39018b2d60635ac0fabfef37b"
+  },
+  {
+    "path": "evidence/african-elephant/bf16_vs_fp8/ffmpeg.log",
+    "bytes": 3579,
+    "sha256": "5268886da2cffee1177db22140a62972391076f749c42d31d3b4f39ade7b1f92"
+  },
+  {
+    "path": "evidence/african-elephant/bf16_vs_fp8/metrics.json",
+    "bytes": 1294,
+    "sha256": "da9bd643ed5752ad54c2cf73d0d120db7c823dab8c89f19dd24c36a9a691b726"
+  },
+  {
+    "path": "evidence/african-elephant/bf16_vs_fp8/psnr-frames.log",
+    "bytes": 39166,
+    "sha256": "7b70603e5d370bc104d755389e4e4d3b5438f93fec2de6e9246ec3db2d9cba34"
+  },
+  {
+    "path": "evidence/african-elephant/bf16_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "252252d6ce6911ae77ff49f457ab725d0b257762cf663487b569c6bbce74803e"
+  },
+  {
+    "path": "evidence/african-elephant/fp8-process.log",
+    "bytes": 8380,
+    "sha256": "cd904fa7f837f2fb112bbfe2ab60ea32d95de88023075578a078cc97e55ca7b3"
+  },
+  {
+    "path": "evidence/african-elephant/fp8-result.json",
+    "bytes": 24850,
+    "sha256": "e01f64f30326da2de3984a2f6b477389f06db94a529602f73fa553354afbde10"
+  },
+  {
+    "path": "evidence/african-elephant/fp8-workflow.json",
+    "bytes": 6190,
+    "sha256": "e9a1b47596118ce8ac3db5c917929441d5b8dde6219315c392e5d68c66e1634c"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_bf16/ffmpeg.log",
+    "bytes": 3515,
+    "sha256": "01d2657e8646dd588e76bb1577bbe025bc9e94c6e7a1345d30892cdbcdc606fb"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_bf16/metrics.json",
+    "bytes": 1275,
+    "sha256": "af92f75b343dc0e529398f16d261890fab7db2530ffd8b718b686a040a2f359f"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_bf16/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_bf16/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_fp8/ffmpeg.log",
+    "bytes": 3574,
+    "sha256": "b873fbc8fc6ce15220bf29b726772d4f27926704efa3189e41ecfa01931688cd"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_fp8/metrics.json",
+    "bytes": 1292,
+    "sha256": "8ea7c84582ceca2e586faed2eff8429f66a3e888f7d2bcdbfa688dcc09b60b7b"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_fp8/psnr-frames.log",
+    "bytes": 39166,
+    "sha256": "7b70603e5d370bc104d755389e4e4d3b5438f93fec2de6e9246ec3db2d9cba34"
+  },
+  {
+    "path": "evidence/african-elephant/original_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "252252d6ce6911ae77ff49f457ab725d0b257762cf663487b569c6bbce74803e"
+  },
+  {
+    "path": "evidence/african-elephant/source-case.json",
+    "bytes": 7397,
+    "sha256": "2f27e083f111dcb4c75f29aa04c3bc30828f01f34335f79cf16cd0d4f880be95"
+  },
+  {
+    "path": "evidence/african-elephant/uid-lookup-summary.json",
+    "bytes": 1049,
+    "sha256": "c6e86330d2ee302a921e14423c0acd01f7b104842789219a34f6a27797458720"
+  },
+  {
+    "path": "evidence/barn-owl/bf16-process.log",
+    "bytes": 7681,
+    "sha256": "c5343b5a7a84a411c90600f2cff1574e11168e584f1b29fc552fe12d55b113ea"
+  },
+  {
+    "path": "evidence/barn-owl/bf16-result.json",
+    "bytes": 23944,
+    "sha256": "8467238b743ac4aba80749b2759b0f08ae40c3fd3e50a63e0a882e65961fe7db"
+  },
+  {
+    "path": "evidence/barn-owl/bf16-workflow.json",
+    "bytes": 6158,
+    "sha256": "ac96e80588cd639bb37d7fd82acbf5247fba13cfc34dc0f3ab358a4c60ddf06e"
+  },
+  {
+    "path": "evidence/barn-owl/bf16_vs_fp8/ffmpeg.log",
+    "bytes": 3559,
+    "sha256": "386f2bf40d1da0000b003e6b551bf79ee05c044c4c320825dcab7211c77a0ed4"
+  },
+  {
+    "path": "evidence/barn-owl/bf16_vs_fp8/metrics.json",
+    "bytes": 1246,
+    "sha256": "ec30e92b15c21c48c97735f105c13c99e99521a1a042165f87cf37f9ecfdb825"
+  },
+  {
+    "path": "evidence/barn-owl/bf16_vs_fp8/psnr-frames.log",
+    "bytes": 38958,
+    "sha256": "6a9a18b444409c22673786630a2f8ff9f9afc8c776e6f42ddf402016e9d4b7c4"
+  },
+  {
+    "path": "evidence/barn-owl/bf16_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "4a2f833016cb5b06035a09cc1e02454624e1ba340c95a5151c731c7b758dee1b"
+  },
+  {
+    "path": "evidence/barn-owl/fp8-process.log",
+    "bytes": 8340,
+    "sha256": "2cbcaea5aa184970f6df32f9af048f4598cd2317c93d3ddd563271260d8c7d50"
+  },
+  {
+    "path": "evidence/barn-owl/fp8-result.json",
+    "bytes": 24842,
+    "sha256": "1d08563372432d62a3497bae525ee28b24ebae93b435c38c28ee831e066e6882"
+  },
+  {
+    "path": "evidence/barn-owl/fp8-workflow.json",
+    "bytes": 6157,
+    "sha256": "bb045bc3e643ee76444728651c3d46188be70ed03839bb4e01af7ad93e2a1515"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_bf16/ffmpeg.log",
+    "bytes": 3495,
+    "sha256": "84b34e1ce070ea3ba1a28b94aeb3fb4172b04f119696aa33d7a1b0c08412ec7b"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_bf16/metrics.json",
+    "bytes": 1227,
+    "sha256": "f6d944c1990d410017c771e901c9105d838a99b3dba65fcfae6e1b42ecf7a3fe"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_bf16/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_bf16/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_fp8/ffmpeg.log",
+    "bytes": 3554,
+    "sha256": "d9cac55c24da0dbd62220b48bbd0f310b51417668ea107bd442d09788f46eb94"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_fp8/metrics.json",
+    "bytes": 1244,
+    "sha256": "d4964e63ec75c1dd75be09175cec35da84f286ec3681c6b718f6b880e2ed945b"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_fp8/psnr-frames.log",
+    "bytes": 38958,
+    "sha256": "6a9a18b444409c22673786630a2f8ff9f9afc8c776e6f42ddf402016e9d4b7c4"
+  },
+  {
+    "path": "evidence/barn-owl/original_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "4a2f833016cb5b06035a09cc1e02454624e1ba340c95a5151c731c7b758dee1b"
+  },
+  {
+    "path": "evidence/barn-owl/source-case.json",
+    "bytes": 7315,
+    "sha256": "10df19054ecb99639458c3b2f22dbefc10c54355197475a66ee3091c140758ba"
+  },
+  {
+    "path": "evidence/barn-owl/uid-lookup-summary.json",
+    "bytes": 1053,
+    "sha256": "1b57ba610e4d863ca50f75f1cfc545adce36251de39b4729461d56865ce9e7eb"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16-process.log",
+    "bytes": 7701,
+    "sha256": "5fef45c6a81a5aba93aa453cfa0ad1b6f32a352804b9107fb8970a8e524e6945"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16-result.json",
+    "bytes": 23960,
+    "sha256": "2ed1a610ecc07e3e5bb1acb4b0ca7d09d0efdb7c24ae2755e750be4e7aebd487"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16-workflow.json",
+    "bytes": 6173,
+    "sha256": "690bb6078cdf0445e16fd394033759ef4ccec0a8029d8489e22f2bed257c1ac2"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16_vs_fp8/ffmpeg.log",
+    "bytes": 3571,
+    "sha256": "01cc23e0c956e945e929906bf77337dfd6e8bfbc09847becc5fa9e3cf5751a1c"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16_vs_fp8/metrics.json",
+    "bytes": 1270,
+    "sha256": "40caed89ee1da5282ea5594c4937bceb51de16b2e60eb330c7f2cdcb411ca73c"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16_vs_fp8/psnr-frames.log",
+    "bytes": 39383,
+    "sha256": "87ec4eb3eb0b603afddeb9db6ff7c8afcbee40c9549bbd9fc54def2f6bbcbbb4"
+  },
+  {
+    "path": "evidence/bengal-tiger/bf16_vs_fp8/ssim-frames.log",
+    "bytes": 23050,
+    "sha256": "9202671a3539adab84c3eef1487e74b716409ceea71067a46931f5762d082c98"
+  },
+  {
+    "path": "evidence/bengal-tiger/fp8-process.log",
+    "bytes": 8361,
+    "sha256": "a333a8070922e3919dc7495c5da509a35fc1c0516fad53e1d2515934ee036f8c"
+  },
+  {
+    "path": "evidence/bengal-tiger/fp8-result.json",
+    "bytes": 24849,
+    "sha256": "1a55e35cd69c9f18172e87d646eb10dba38393fbd5d9ab8af095df9809e2dfd8"
+  },
+  {
+    "path": "evidence/bengal-tiger/fp8-workflow.json",
+    "bytes": 6172,
+    "sha256": "f87a16f3dc2f1b9276cdecf084f67ba515c93fe2e25215e0ccd24187ec4db9bd"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_bf16/ffmpeg.log",
+    "bytes": 3507,
+    "sha256": "bf697f3878f4ffed07135cb88c3c2609e21f7774a2704c09b2afc51a6386d874"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_bf16/metrics.json",
+    "bytes": 1251,
+    "sha256": "4a0898ce792a0528f1bb807f5dacb57b85e4f497b8d8c2f248a93e70cef8db4d"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_bf16/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_bf16/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_fp8/ffmpeg.log",
+    "bytes": 3566,
+    "sha256": "73f5bbd3e930903c6a19a9b8430ccdcfb0d84c02cf1b284ec27b351c054b6415"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_fp8/metrics.json",
+    "bytes": 1268,
+    "sha256": "bc229b5028190789f7b56c447f7af689a3b174a5366808299bc1543a6dc06a0a"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_fp8/psnr-frames.log",
+    "bytes": 39383,
+    "sha256": "87ec4eb3eb0b603afddeb9db6ff7c8afcbee40c9549bbd9fc54def2f6bbcbbb4"
+  },
+  {
+    "path": "evidence/bengal-tiger/original_vs_fp8/ssim-frames.log",
+    "bytes": 23050,
+    "sha256": "9202671a3539adab84c3eef1487e74b716409ceea71067a46931f5762d082c98"
+  },
+  {
+    "path": "evidence/bengal-tiger/source-case.json",
+    "bytes": 7399,
+    "sha256": "f2bf77bd414a4708913cdf045c0ee9ee1127fb720dd1d2b48533c66ee92cf05e"
+  },
+  {
+    "path": "evidence/bengal-tiger/uid-lookup-summary.json",
+    "bytes": 1062,
+    "sha256": "ac39f4b998ebb81c1c38ca06462557fe495c475ca44db2d12b84d00aabf355cd"
+  },
+  {
+    "path": "evidence/red-fox/bf16-process.log",
+    "bytes": 9765,
+    "sha256": "8744950fb38d1d76722d1eb1f8abeea900e52539d761dab8a62c91d014d08d77"
+  },
+  {
+    "path": "evidence/red-fox/bf16-result.json",
+    "bytes": 46348,
+    "sha256": "0a67bc0219e75d56d2d5a8025317e90cad897c46f1377cba2cef373553454e37"
+  },
+  {
+    "path": "evidence/red-fox/bf16-workflow.json",
+    "bytes": 6134,
+    "sha256": "e4da536bd5f319684602767572f27913b42166ee0f327e7596096799e7e51188"
+  },
+  {
+    "path": "evidence/red-fox/bf16_repeatability/ffmpeg.log",
+    "bytes": 3498,
+    "sha256": "3ec2ccd2e60b0bb9937af97e0a9ed5e9e87cd8947bc3d3dbb0706d29fb1df9ee"
+  },
+  {
+    "path": "evidence/red-fox/bf16_repeatability/metrics.json",
+    "bytes": 1235,
+    "sha256": "ecae0481b45adf26734b6829cc7a0fbb316f3ff789b9e785e1b092213bf4fea3"
+  },
+  {
+    "path": "evidence/red-fox/bf16_repeatability/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/red-fox/bf16_repeatability/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/red-fox/bf16_vs_fp8/ffmpeg.log",
+    "bytes": 3558,
+    "sha256": "57e27bda4aabca3830aa7bee9a56156066bf678c9b9c6a052f57dc77e521f0fb"
+  },
+  {
+    "path": "evidence/red-fox/bf16_vs_fp8/metrics.json",
+    "bytes": 1240,
+    "sha256": "d1cb8a4bdd1a5332ac9ea8b5865202021e3e73f7cfba4b11a2a695156ca66599"
+  },
+  {
+    "path": "evidence/red-fox/bf16_vs_fp8/psnr-frames.log",
+    "bytes": 38956,
+    "sha256": "4138eecb2f7a66707fd6afb47c65045103445b111297a15b43c564270ae2e90a"
+  },
+  {
+    "path": "evidence/red-fox/bf16_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "b4d9d33296de585806da9a8f573d6e2ca028c7ba85474c84542bb4ee45afd4df"
+  },
+  {
+    "path": "evidence/red-fox/fp8-first-call-result.json",
+    "bytes": 24836,
+    "sha256": "f3c676d2ccc1efb0109fe258b0c285f9d163fad459ecb7dda8b7ba2556e1b6a7"
+  },
+  {
+    "path": "evidence/red-fox/fp8-process.log",
+    "bytes": 11088,
+    "sha256": "a506bcb386376d51255d92f75f4a6f441499165db2c6b51a07da47ac0027be41"
+  },
+  {
+    "path": "evidence/red-fox/fp8-raw-process-result.json",
+    "bytes": 48136,
+    "sha256": "11e6a9ef96147b433a6e0df718182fbd073333bd8daeee8c59a659b4d81955c1"
+  },
+  {
+    "path": "evidence/red-fox/fp8-result.json",
+    "bytes": 48556,
+    "sha256": "6c15ca88ffa0dc3588b1419d0eb65a3a437c0928117e8559f787494dbfa857c4"
+  },
+  {
+    "path": "evidence/red-fox/fp8-workflow.json",
+    "bytes": 6133,
+    "sha256": "0b5a0341c0c69e653d33d5caf9ee4153940b70be1677e952a9e9342c87a50c6f"
+  },
+  {
+    "path": "evidence/red-fox/fp8_repeatability/ffmpeg.log",
+    "bytes": 3498,
+    "sha256": "92e8e5c919368dfabe380e583c9f6c39b2ae1cd0d5f6cf25042dd10efa4447fb"
+  },
+  {
+    "path": "evidence/red-fox/fp8_repeatability/metrics.json",
+    "bytes": 1229,
+    "sha256": "286028a1cad831be7dec390c11e769912486c2960f32b83f7d9dd5472f8a5583"
+  },
+  {
+    "path": "evidence/red-fox/fp8_repeatability/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/red-fox/fp8_repeatability/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_bf16/ffmpeg.log",
+    "bytes": 3493,
+    "sha256": "98f8af4175a5f65adcb1417df20804360fc3b6c949761f6c3b21f64ceb4c7530"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_bf16/metrics.json",
+    "bytes": 1221,
+    "sha256": "51066bf67ee9b4c992c4a27703cb0b8421ebfe038d30efae37864645905c8676"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_bf16/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_bf16/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_fp8/ffmpeg.log",
+    "bytes": 3553,
+    "sha256": "354f98a8b5d33812a8ae34ddc0915b79785be38f9c9a7afab0cf9026438294ff"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_fp8/metrics.json",
+    "bytes": 1238,
+    "sha256": "684a249713f3483d0eaa445c476b935dd7dfec7b3e426b79b380ed0ffa7d376c"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_fp8/psnr-frames.log",
+    "bytes": 38956,
+    "sha256": "4138eecb2f7a66707fd6afb47c65045103445b111297a15b43c564270ae2e90a"
+  },
+  {
+    "path": "evidence/red-fox/original_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "b4d9d33296de585806da9a8f573d6e2ca028c7ba85474c84542bb4ee45afd4df"
+  },
+  {
+    "path": "evidence/red-fox/source-case.json",
+    "bytes": 7321,
+    "sha256": "0594c44c104eb43e5b16319ef19085b77043e913beac8179c302e01a7b50472d"
+  },
+  {
+    "path": "evidence/red-fox/uid-lookup-summary.json",
+    "bytes": 1061,
+    "sha256": "6e80db77215e7b6c337521d182ff8a2f6a28a64a07a8cfe623aad08519b1a2d2"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16-process.log",
+    "bytes": 7706,
+    "sha256": "86a3c4a661510ee6abfa1dc7f16a1766333659db45c076ad955b5b11407c253b"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16-result.json",
+    "bytes": 23958,
+    "sha256": "cb326f0e89921d9341317b92e886245848182a524bb60a3aac2ec5c4eaa26927"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16-workflow.json",
+    "bytes": 6170,
+    "sha256": "992e35bda60de19f13908a39f1cc65b2fed15723452142dee5912fc7e013ee8e"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16_vs_fp8/ffmpeg.log",
+    "bytes": 3569,
+    "sha256": "fe298fb8f1fc1338fd5710d15f2da27a1b544cf231710b62d7159f8858a484fd"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16_vs_fp8/metrics.json",
+    "bytes": 1275,
+    "sha256": "6e1bbbec0680fa4608cc861344170023f8171981ff02b2a2aa06800905218280"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16_vs_fp8/psnr-frames.log",
+    "bytes": 38828,
+    "sha256": "dd205620706bc82ced3dc08c15c2e56046d570e5f74136a3fc056902134971da"
+  },
+  {
+    "path": "evidence/scarlet-macaw/bf16_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "3881e95ace11f51059d03ccb5f7ad30a427be5c66a2919bf095a832ee674e4be"
+  },
+  {
+    "path": "evidence/scarlet-macaw/fp8-process.log",
+    "bytes": 8366,
+    "sha256": "e94f13e953814f1a5abfe475267b8e7cdc1e77f496a4282d4f76607d00fcc170"
+  },
+  {
+    "path": "evidence/scarlet-macaw/fp8-result.json",
+    "bytes": 24847,
+    "sha256": "25413a19532fdf4585df8aef5e7538a40e46f3bfad65d84097e06ea9227f8f88"
+  },
+  {
+    "path": "evidence/scarlet-macaw/fp8-workflow.json",
+    "bytes": 6169,
+    "sha256": "8f0e1418df9091ed6f821489aae50bee06728f556192173e0fbfc763877e1cb5"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_bf16/ffmpeg.log",
+    "bytes": 3505,
+    "sha256": "6becd9dcf05aea3d16a9fcb5f553880413981c218bc12021b0e37efdc2cb7725"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_bf16/metrics.json",
+    "bytes": 1257,
+    "sha256": "8d620faa0287d522faa321f105df1e2e7b25ef51d8079a9e49097c4504fbf58b"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_bf16/psnr-frames.log",
+    "bytes": 35730,
+    "sha256": "54512cfb203f1fb2552179206328af85c8dd70d4454473480fcbd4db8774dbbb"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_bf16/ssim-frames.log",
+    "bytes": 20888,
+    "sha256": "4520426a0ec2da004318b0e0bd6c19b3d7c3f2d4a681a0125b1f7439b0758096"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_fp8/ffmpeg.log",
+    "bytes": 3564,
+    "sha256": "c89f3c25f5c40ef8fd9173155681fd7475eb52459004f830d81c6fb0fb27948a"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_fp8/metrics.json",
+    "bytes": 1273,
+    "sha256": "160bc9a091fd113c137ccaf61f7f7449a6ed6b90c0cf82612df3487c89e6a476"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_fp8/psnr-frames.log",
+    "bytes": 38828,
+    "sha256": "dd205620706bc82ced3dc08c15c2e56046d570e5f74136a3fc056902134971da"
+  },
+  {
+    "path": "evidence/scarlet-macaw/original_vs_fp8/ssim-frames.log",
+    "bytes": 23060,
+    "sha256": "3881e95ace11f51059d03ccb5f7ad30a427be5c66a2919bf095a832ee674e4be"
+  },
+  {
+    "path": "evidence/scarlet-macaw/source-case.json",
+    "bytes": 7368,
+    "sha256": "e956198a721ba4ac533658d9799cd92bfb8e3b49a8c7e497abcf930d6340dd5b"
+  },
+  {
+    "path": "evidence/scarlet-macaw/uid-lookup-summary.json",
+    "bytes": 1054,
+    "sha256": "c6265fa7bb7416bcae58ece88555bd14c005339951e1a46019867d15b686169c"
+  },
+  {
+    "path": "fp8_adapter.py",
+    "bytes": 4249,
+    "sha256": "d7c8556fa5689319c39abcaa5ecd8109c666bc487e14e2cd18c42747968492da"
+  },
+  {
+    "path": "gpu-gates.json",
+    "bytes": 4757,
+    "sha256": "0a624424c74d018f54a2ad0078bdc17ae2aad20e5b317d70dc0ba895f9eb4b1a"
+  },
+  {
+    "path": "gpu-ownership.jsonl",
+    "bytes": 76607,
+    "sha256": "9cfb6b3bc24acb35c581336297efb60f3bee84efa9c53ae95f462deef4048f11"
+  },
+  {
+    "path": "input-integrity.json",
+    "bytes": 4990,
+    "sha256": "49528a938c808d525c59264769b99829cf813e3b08f0f177f4fdd764136cae29"
+  },
+  {
+    "path": "media/african-elephant/bf16.mp4",
+    "bytes": 2399448,
+    "sha256": "7d3a05e33275697a5d973aa31df111acf132344b5a93d1f0c1694e29e1738483"
+  },
+  {
+    "path": "media/african-elephant/fp8.mp4",
+    "bytes": 2403825,
+    "sha256": "f5b0fb1853749694249fb494d9324abf514e48a08f106f2427dd169f09395440"
+  },
+  {
+    "path": "media/african-elephant/frames.jpg",
+    "bytes": 440030,
+    "sha256": "8c5990106f4da143f04eb58344696b131e86f4720df65f8aeadda4a87eeb76ba"
+  },
+  {
+    "path": "media/african-elephant/original.mp4",
+    "bytes": 2399624,
+    "sha256": "dba9e01b6172ba15ef06c0fb38cc1e70630baa76591be58364ed0c052757a638"
+  },
+  {
+    "path": "media/barn-owl/bf16.mp4",
+    "bytes": 1795980,
+    "sha256": "ad5d27b4701a80623d9f88c33f1e8c5d01792ec8e9c920aa1ecc2073676e4f2c"
+  },
+  {
+    "path": "media/barn-owl/fp8.mp4",
+    "bytes": 1777591,
+    "sha256": "b68b0287ce6d84d49e5fefc53f15a63fb5b31915433b28bcb084cf70c0ef50e3"
+  },
+  {
+    "path": "media/barn-owl/frames.jpg",
+    "bytes": 927411,
+    "sha256": "011502f55b24ec7e9308727fafff82e7f51f29f77ddcf92ed4c68368dd0023b0"
+  },
+  {
+    "path": "media/barn-owl/original.mp4",
+    "bytes": 1796164,
+    "sha256": "104131735d1a6ce57c98cb4e57bb7a130cb03f09905c157cdbb2d4a28a1e02e0"
+  },
+  {
+    "path": "media/bengal-tiger/bf16.mp4",
+    "bytes": 2277541,
+    "sha256": "f6c26df785f3198f8cf7e10eb0264546bc5f96264f7702294454a0e81dd44bba"
+  },
+  {
+    "path": "media/bengal-tiger/fp8.mp4",
+    "bytes": 2276352,
+    "sha256": "d2c144db3807f842fb98ea65112ba89f17884dbe8563506d4a0c2efe152bea42"
+  },
+  {
+    "path": "media/bengal-tiger/frames.jpg",
+    "bytes": 463150,
+    "sha256": "8e511445ed4ecf0707484ce2de5c9b5b02ce1c4d4fb7137399cfe92b79e1cdc9"
+  },
+  {
+    "path": "media/bengal-tiger/original.mp4",
+    "bytes": 2277721,
+    "sha256": "bfdd4d1e63f43888889307a6dad1673d69c5223ed052029ef306dc2e2a37943a"
+  },
+  {
+    "path": "media/red-fox/bf16.mp4",
+    "bytes": 1876244,
+    "sha256": "f4269b8757c744885effd04ee127d40d7e2d7de7870ed64ed687289ce471095a"
+  },
+  {
+    "path": "media/red-fox/fp8.mp4",
+    "bytes": 1901746,
+    "sha256": "7cd1c7f98829f206809260fd07fd62d7249b8aa61580d5e8dd2fbf2f8285cedf"
+  },
+  {
+    "path": "media/red-fox/frames.jpg",
+    "bytes": 392489,
+    "sha256": "21c52f94d53f81ed7b0a76d5dcc72275c4b4dd76f904bebc21ee71b1b7ead13e"
+  },
+  {
+    "path": "media/red-fox/original.mp4",
+    "bytes": 1876429,
+    "sha256": "16363581b50903f1104ec9ee0b5c99ad3515dc7bd27a8a47fc903c107d15d6b9"
+  },
+  {
+    "path": "media/scarlet-macaw/bf16.mp4",
+    "bytes": 1442849,
+    "sha256": "c74b13853f1cedd6350d10f4384b8daf9b5483213c58c2d1e55d301d2b61b98f"
+  },
+  {
+    "path": "media/scarlet-macaw/fp8.mp4",
+    "bytes": 1456736,
+    "sha256": "261a7c3567350f4d409ce9a526fbaf5387f62151801913066db34c58e6d17cd0"
+  },
+  {
+    "path": "media/scarlet-macaw/frames.jpg",
+    "bytes": 392274,
+    "sha256": "9611567a6d4ed40aad87aaeda79a4b61a6aecb4c8ad1974496c3b49abeb3478d"
+  },
+  {
+    "path": "media/scarlet-macaw/original.mp4",
+    "bytes": 1443028,
+    "sha256": "2d309a5580a180738d0aa305b42b2aaa22d2de4a04488bef8c71ea0534736193"
+  },
+  {
+    "path": "prepare.py",
+    "bytes": 3194,
+    "sha256": "7a88428077f2be696b27a12832343fcc437398939e00044319d3bf9187fa8269"
+  },
+  {
+    "path": "quantization-verification.json",
+    "bytes": 780,
+    "sha256": "8a5ccfb8fa5c662df51f08baff35f7d0df9db7a40ef7420a16ace7ec6179fe66"
+  },
+  {
+    "path": "results.csv",
+    "bytes": 1337,
+    "sha256": "8a6552c75776a758e72f1288bc0df73f8143bbb17d80e4b6236411968ae240e2"
+  },
+  {
+    "path": "results.json",
+    "bytes": 234856,
+    "sha256": "c82cb28e37a03bbf39a9ba0fad264ea9177ebeba756bcd1d0a6e6f9fc3f5161f"
+  },
+  {
+    "path": "run_case.py",
+    "bytes": 4673,
+    "sha256": "1714e3e81f7225ba5928cd38ad2d6873cf9a3e64b502f5c634c9b756c47fe429"
+  },
+  {
+    "path": "run_suite.py",
+    "bytes": 2947,
+    "sha256": "ebe10771e0fab97a6f747cf9d06caecf714dd8116a6ee5a110dca2c7c6edb4bd"
+  },
+  {
+    "path": "source-provenance.json",
+    "bytes": 1721,
+    "sha256": "476f1194d68d87d6a60de342ca8711f0e61fb267dcb19d4dc7d97972e593ca44"
+  },
+  {
+    "path": "verification-summary.json",
+    "bytes": 557,
+    "sha256": "c566af1d57fc9cdad2f3064629d430e573053d23f0f9504c6abcabcdb3619dec"
+  },
+  {
+    "path": "verify.mjs",
+    "bytes": 5742,
+    "sha256": "880de561cccf595854d2ed612a4ac170c5a86e1555966608c25f1d734699899d"
+  },
+  {
+    "path": "visual-observations.json",
+    "bytes": 1333,
+    "sha256": "484082d1b8eeb5ceb678c31968d872e1d572bda077cd0bf2af4eefcff660b047"
+  },
+  {
+    "path": "worker-release-provenance.json",
+    "bytes": 3091,
+    "sha256": "e0b82e4bd9fbec80a92f6acabe430de153367dbc26d615bc61c3c245b95d901e"
+  }
+]

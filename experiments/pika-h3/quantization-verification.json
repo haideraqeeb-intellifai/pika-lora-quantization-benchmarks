@@ -1,0 +1,20 @@
+{
+  "source_repo": "Pika-Labs/Pika-H3-Flex",
+  "revision": "3ff166447d5edb1406107ab8370c42000ce173e4",
+  "filename": "pika_h3_flex_fl2va_comfy_bf16.safetensors",
+  "sha256": "68783e6447696ec365d13c0554941e070bee4cfea13c37da52498ec4f9a53f89",
+  "tensor_count": 416,
+  "source_tensor_dtypes": {
+    "BF16": 416
+  },
+  "source_payload_bytes": 1956118528,
+  "fp8_payload_bytes": 978059264,
+  "fp32_scale_bytes": 1664,
+  "scheme": "float8_e4m3fn, per-tensor absmax weights and dynamic per-tensor absmax activations",
+  "fp8_computation": "torch._scaled_mm with FP8 E4M3 operands; no fallback",
+  "bypass_output_dtype": "bfloat16",
+  "merged_fc2_output_dtype": "float32",
+  "base": "unchanged pruned INT8 ConvRot",
+  "verified_native_fp8_gemms_red_fox": 1066,
+  "fallbacks_red_fox": 0
+}

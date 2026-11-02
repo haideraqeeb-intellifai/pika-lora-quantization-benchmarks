@@ -1,0 +1,15 @@
+START bengal-tiger fp8
+DONE bengal-tiger fp8 0
+START african-elephant bf16
+DONE african-elephant bf16 0
+START african-elephant fp8
+DONE african-elephant fp8 0
+START scarlet-macaw bf16
+DONE scarlet-macaw bf16 0
+START scarlet-macaw fp8
+DONE scarlet-macaw fp8 0
+START barn-owl bf16
+DONE barn-owl bf16 0
+START barn-owl fp8
+DONE barn-owl fp8 0
+SUITE_COMPLETE

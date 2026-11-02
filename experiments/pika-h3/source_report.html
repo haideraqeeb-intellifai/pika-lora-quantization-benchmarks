@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Pika Flex Animal Podcast Batch — 40-Video Report</title>
+  <style>
+    :root {
+      --bg: #07100e;
+      --panel: #0d1916;
+      --panel-2: #12231e;
+      --text: #eef8f3;
+      --muted: #9bb4aa;
+      --line: rgba(178, 220, 201, 0.15);
+      --accent: #6ee7b7;
+      --accent-2: #2dd4bf;
+      --warm: #fbbf24;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% -10%, rgba(45, 212, 191, 0.18), transparent 32rem),
+        radial-gradient(circle at 92% 5%, rgba(110, 231, 183, 0.12), transparent 28rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1480px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(26px, 5vw, 58px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(18, 35, 30, 0.96), rgba(8, 20, 17, 0.92));
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -80px;
+      bottom: -130px;
+      border-radius: 50%;
+      background: rgba(110, 231, 183, 0.14);
+      filter: blur(2px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 16px var(--accent);
+    }
+
+    h1 {
+      max-width: 950px;
+      margin: 0;
+      font-size: clamp(34px, 6vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .lede {
+      max-width: 840px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 20px);
+    }
+
+    .stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(7, 16, 14, 0.62);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .stat span { color: var(--muted); font-size: 13px; }
+
+    .summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 18px;
+      margin: 22px 0;
+    }
+
+    .note, .metadata {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(13, 25, 22, 0.88);
+    }
+
+    .note { color: var(--muted); }
+    .note strong { color: var(--text); }
+
+    .metadata dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 7px 14px;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .metadata dt { color: var(--muted); }
+    .metadata dd { margin: 0; text-align: right; font-weight: 700; }
+
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 24px 0;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(7, 16, 14, 0.86);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.24);
+    }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    button, input {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--text);
+      background: var(--panel);
+      font: inherit;
+    }
+
+    button {
+      min-height: 42px;
+      padding: 0 15px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    button:hover, button.active {
+      border-color: rgba(110, 231, 183, 0.55);
+      background: rgba(110, 231, 183, 0.14);
+      color: var(--accent);
+    }
+
+    input {
+      width: min(320px, 100%);
+      min-height: 42px;
+      padding: 0 14px;
+      outline: none;
+    }
+
+    input:focus { border-color: var(--accent-2); }
+
+    .results {
+      margin: -7px 4px 17px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .video-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(18, 35, 30, 0.95), rgba(10, 22, 18, 0.98));
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+    }
+
+    .video-wrap {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #020706;
+    }
+
+    .video-card.portrait .video-wrap {
+      width: min(100%, 380px);
+      aspect-ratio: 9 / 16;
+      margin: 0 auto;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #020706;
+    }
+
+    .index {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 5px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      pointer-events: none;
+    }
+
+    .card-body { padding: 17px; }
+
+    .card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-head h2 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    .badge {
+      flex: none;
+      padding: 4px 8px;
+      border: 1px solid rgba(110, 231, 183, 0.24);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(110, 231, 183, 0.08);
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .badge.beak {
+      color: var(--warm);
+      border-color: rgba(251, 191, 36, 0.28);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .run-id {
+      overflow: hidden;
+      margin: 11px 0 13px;
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+    }
+
+    .runtime { color: var(--muted); }
+
+    .cdn-link {
+      color: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .cdn-link:hover { text-decoration: underline; }
+
+    .empty {
+      display: none;
+      padding: 52px 20px;
+      border: 1px dashed var(--line);
+      border-radius: 18px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .methods {
+      margin-top: 30px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+    }
+
+    details { padding: 20px; }
+    details + details { border-top: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 800; }
+
+    pre {
+      overflow: auto;
+      margin: 16px 0 0;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: #cde5db;
+      background: #06100d;
+      font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 1040px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .summary { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .shell { width: min(100% - 20px, 1480px); padding-top: 10px; }
+      .hero { border-radius: 20px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { position: static; align-items: stretch; flex-direction: column; }
+      input { width: 100%; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Generation report · 02 Nov 2026</p>
+      <h1>Pika Flex animal podcast batch</h1>
+      <p class="lede">A consolidated review surface for the 40 generated animal videos. All embedded players and direct asset links below use the Render CDN.</p>
+      <div class="stats" aria-label="Batch statistics">
+        <div class="stat"><strong>40</strong><span>Total videos</span></div>
+        <div class="stat"><strong>24</strong><span>Non-beak animals</span></div>
+        <div class="stat"><strong>16</strong><span>Beak animals</span></div>
+        <div class="stat"><strong>40 / 40</strong><span>Generation metadata verified</span></div>
+      </div>
+    </section>
+
+    <section class="summary" aria-label="Report notes">
+      <div class="note"><strong>Review scope:</strong> This report compiles the generated outputs and verified job metadata. It does not label the videos as visually approved; camera stability, speech articulation, gesture quality and anatomy should be scored during review.</div>
+      <div class="metadata">
+        <dl>
+          <dt>Pipeline</dt><dd>image2video_h3_turbo</dd>
+          <dt>Effective model</dt><dd>Pika Flex</dd>
+          <dt>Mode</dt><dd>FL2V · 3 steps</dd>
+          <dt>Requested output</dt><dd>20 landscape + 20 portrait · 15.08s</dd>
+          <dt>Seed</dt><dd>427739230855701667</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Video filters">
+      <div class="filters">
+        <button type="button" class="active" data-filter="all">All 40</button>
+        <button type="button" data-filter="non-beak">Non-beak 24</button>
+        <button type="button" data-filter="beak">Beak 16</button>
+      </div>
+      <input id="search" type="search" placeholder="Search animal or asset ID…" aria-label="Search videos">
+    </section>
+
+    <p id="results" class="results" aria-live="polite">Showing 40 of 40 videos</p>
+    <section id="grid" class="grid" aria-label="Generated videos"></section>
+    <div id="empty" class="empty">No videos match this filter.</div>
+
+    <section class="methods" aria-label="Prompt templates">
+      <details>
+        <summary>Non-beak prompt template used for this batch</summary>
+        <pre>How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.
+
+integrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same {species} from &lt;Picture 1&gt; remains in the established podcast setting, retaining the exact {appearance}, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with &lt;Picture 1&gt;.
+
+From 00:00.000 onward, the {species} delivers the supplied speech with clear, natural species-appropriate articulation. The mouth and jaw visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the mouth returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.
+
+From 00:04.500 to 00:06.500, while continuing the speech articulation, one existing {limb} makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing {limb} makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the {species}'s natural {limb} anatomy and {covering}.
+
+The camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the {species}'s mouth, jaw, throat, eyes, head and existing {limbs} move; the camera, framing, background and props remain stationary.
+
+From 00:13.300 to 00:15.080, the {species} smoothly returns its head, {limbs} and posture to the exact neutral state of &lt;Picture 2&gt; while continuing any remaining speech articulation. Exactly one {species} remains visible with consistent natural anatomy. No additional subjects, extra {limbs}, duplicate props, captions, logos, watermarks or on-screen text appear.
+
+overall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.
+
+non_diegetic_music: N/A</pre>
+      </details>
+      <details>
+        <summary>Beak-animal articulation adaptation</summary>
+        <pre>The beak-animal runs use the same scene, timing, locked-camera and continuity structure. The articulation instruction is adapted to the animal: “The upper and lower parts of the beak visibly articulate at the timing, rhythm and intensity of every spoken phrase,” with species-appropriate wings or flippers used for the two conversational gestures.</pre>
+      </details>
+    </section>
+
+    <footer>Standalone review report · Video delivery via user-assets.renderplatform.com CDN</footer>
+  </main>
+
+  <script>
+    const videos = [
+      {name:"Red Fox", group:"non-beak", uid:"animal-pika-flex-report-redfox-c01-s1-articulation-paws-v2-20261102-s1", seconds:194.513, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-redfox-c01-s1-articulation-paws-v2-20261102-s1.mp4"},
+      {name:"Bengal Tiger", group:"non-beak", uid:"animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1", seconds:189.057, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1.mp4"},
+      {name:"River Otter", group:"non-beak", uid:"animal-pika-batch-nonbeak-riverotter-c03-s1-v2-20261102-s1", seconds:188.045, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-riverotter-c03-s1-v2-20261102-s1.mp4"},
+      {name:"Giant Panda", group:"non-beak", uid:"animal-pika-batch-nonbeak-giantpanda-c04-s1-v2-20261102-s1", seconds:188.485, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-giantpanda-c04-s1-v2-20261102-s1.mp4"},
+      {name:"African Elephant", group:"non-beak", uid:"animal-pika-batch-nonbeak-elephant-c05-s1-v2-20261102-s1", seconds:186.725, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-elephant-c05-s1-v2-20261102-s1.mp4"},
+      {name:"Meerkat", group:"non-beak", uid:"animal-pika-batch-nonbeak-meerkat-c05-s2-v2-20261102-s1", seconds:190.510, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-meerkat-c05-s2-v2-20261102-s1.mp4"},
+      {name:"Gray Wolf", group:"non-beak", uid:"animal-pika-batch-nonbeak-graywolf-c06-s1-v2-20261102-s1", seconds:175.524, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-graywolf-c06-s1-v2-20261102-s1.mp4"},
+      {name:"Red Squirrel", group:"non-beak", uid:"animal-pika-batch-nonbeak-redsquirrel-c06-s2-v2-20261102-s1", seconds:187.460, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-redsquirrel-c06-s2-v2-20261102-s1.mp4"},
+      {name:"Capybara", group:"non-beak", uid:"animal-pika-batch-nonbeak-capybara-c07-s1-v2-20261102-s1", seconds:186.279, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-capybara-c07-s1-v2-20261102-s1.mp4"},
+      {name:"Polar Bear", group:"non-beak", uid:"animal-pika-batch-nonbeak-polarbear-c08-s1-v2-20261102-s1", seconds:186.572, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-polarbear-c08-s1-v2-20261102-s1.mp4"},
+      {name:"Arctic Fox", group:"non-beak", uid:"animal-pika-batch-nonbeak-arcticfox-c08-s2-v2-20261102-s1", seconds:185.755, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-arcticfox-c08-s2-v2-20261102-s1.mp4"},
+      {name:"Chimpanzee", group:"non-beak", uid:"animal-pika-batch-nonbeak-chimpanzee-c09-s1-v2-20261102-s1", seconds:176.564, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-chimpanzee-c09-s1-v2-20261102-s1.mp4"},
+      {name:"Koala", group:"non-beak", uid:"animal-pika-batch-nonbeak-koala-c10-s1-v2-20261102-s1", seconds:192.266, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-koala-c10-s1-v2-20261102-s1.mp4"},
+      {name:"African Lion", group:"non-beak", uid:"animal-pika-batch-nonbeak-lion-c11-s1-v2-portrait-20261102-s1", seconds:188.085, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-lion-c11-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Raccoon", group:"non-beak", uid:"animal-pika-batch-nonbeak-raccoon-c12-s1-v2-portrait-20261102-s1", seconds:186.526, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-raccoon-c12-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Western Lowland Gorilla", group:"non-beak", uid:"animal-pika-batch-nonbeak-gorilla-c13-s1-v2-portrait-20261102-s1", seconds:182.383, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-gorilla-c13-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Llama", group:"non-beak", uid:"animal-pika-batch-nonbeak-llama-c14-s1-v2-portrait-20261102-s1", seconds:190.047, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-llama-c14-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Cheetah", group:"non-beak", uid:"animal-pika-batch-nonbeak-cheetah-c15-s1-v2-portrait-20261102-s1", seconds:189.818, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-cheetah-c15-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Fennec Fox", group:"non-beak", uid:"animal-pika-batch-nonbeak-fennecfox-c15-s2-v2-portrait-20261102-s1", seconds:186.728, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-fennecfox-c15-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Brown Bear", group:"non-beak", uid:"animal-pika-batch-nonbeak-brownbear-c16-s1-v2-portrait-20261102-s1", seconds:166.622, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-brownbear-c16-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Red Kangaroo", group:"non-beak", uid:"animal-pika-batch-nonbeak-redkangaroo-c17-s1-v2-portrait-20261102-s1", seconds:187.922, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-redkangaroo-c17-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Orangutan", group:"non-beak", uid:"animal-pika-batch-nonbeak-orangutan-c18-s1-v2-portrait-20261102-s1", seconds:184.571, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-orangutan-c18-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Snow Leopard", group:"non-beak", uid:"animal-pika-batch-nonbeak-snowleopard-c19-s1-v2-portrait-20261102-s1", seconds:184.820, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-snowleopard-c19-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"European Badger", group:"non-beak", uid:"animal-pika-batch-nonbeak-badger-c20-s1-v2-portrait-20261102-s1", seconds:188.639, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-badger-c20-s1-v2-portrait-20261102-s1.mp4"},
+      {name:"Snowy Owl", group:"beak", uid:"animal-pika-batch-beak-snowyowl-c01-s2-v2-20261102-s1", seconds:197.832, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-snowyowl-c01-s2-v2-20261102-s1.mp4"},
+      {name:"Scarlet Macaw", group:"beak", uid:"animal-pika-flex-report-macaw-articulation-wing-v2-20261031-s1", seconds:180.531, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-macaw-articulation-wing-v2-20261031-s1.mp4"},
+      {name:"Emperor Penguin", group:"beak", uid:"animal-pika-batch-beak-emperor-penguin-c03-s2-v2-20261102-s1", seconds:190.107, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-emperor-penguin-c03-s2-v2-20261102-s1.mp4"},
+      {name:"Red-Crowned Crane", group:"beak", uid:"animal-pika-batch-beak-redcrownedcrane-c04-s2-v2-20261102-s1", seconds:189.764, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-redcrownedcrane-c04-s2-v2-20261102-s1.mp4"},
+      {name:"Toucan", group:"beak", uid:"animal-pika-batch-beak-toucan-c07-s2-v2-20261102-s1", seconds:186.551, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-toucan-c07-s2-v2-20261102-s1.mp4"},
+      {name:"Flamingo", group:"beak", uid:"animal-pika-batch-beak-flamingo-c09-s2-v2-20261102-s1", seconds:184.717, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-flamingo-c09-s2-v2-20261102-s1.mp4"},
+      {name:"Sulphur-Crested Cockatoo", group:"beak", uid:"animal-pika-batch-beak-cockatoo-c10-s2-v2-20261102-s1", seconds:178.738, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-cockatoo-c10-s2-v2-20261102-s1.mp4"},
+      {name:"Common Raven", group:"beak", uid:"animal-pika-batch-beak-raven-c11-s2-v2-portrait-20261102-s1", seconds:188.981, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-raven-c11-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Barn Owl", group:"beak", uid:"animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1", seconds:166.632, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Blue-And-Yellow Macaw", group:"beak", uid:"animal-pika-batch-beak-blueyellowmacaw-c13-s2-v2-portrait-20261102-s1", seconds:183.955, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-blueyellowmacaw-c13-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Kingfisher", group:"beak", uid:"animal-pika-batch-beak-kingfisher-c14-s2-v2-portrait-20261102-s1", seconds:183.935, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-kingfisher-c14-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Blue Jay", group:"beak", uid:"animal-pika-batch-beak-bluejay-c16-s2-v2-portrait-20261102-s1", seconds:183.795, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-bluejay-c16-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Laughing Kookaburra", group:"beak", uid:"animal-pika-batch-beak-kookaburra-c17-s2-v2-portrait-20261102-s1", seconds:188.553, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-kookaburra-c17-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Rhinoceros Hornbill", group:"beak", uid:"animal-pika-batch-beak-hornbill-c18-s2-v2-portrait-20261102-s1", seconds:189.612, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-hornbill-c18-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"Atlantic Puffin", group:"beak", uid:"animal-pika-batch-beak-puffin-c19-s2-v2-portrait-20261102-s1", seconds:189.920, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-puffin-c19-s2-v2-portrait-20261102-s1.mp4"},
+      {name:"European Robin", group:"beak", uid:"animal-pika-batch-beak-robin-c20-s2-v2-portrait-20261102-s1", seconds:183.587, url:"https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-robin-c20-s2-v2-portrait-20261102-s1.mp4"}
+    ];
+
+    const grid = document.querySelector("#grid");
+    const search = document.querySelector("#search");
+    const results = document.querySelector("#results");
+    const empty = document.querySelector("#empty");
+    const filterButtons = [...document.querySelectorAll("[data-filter]")];
+    let activeFilter = "all";
+
+    function formatRuntime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainder = Math.round(seconds % 60);
+      return `${minutes}m ${String(remainder).padStart(2, "0")}s generation`;
+    }
+
+    function render() {
+      const query = search.value.trim().toLowerCase();
+      const visible = videos.filter((item) => {
+        const groupMatch = activeFilter === "all" || item.group === activeFilter;
+        const queryMatch = !query || item.name.toLowerCase().includes(query) || item.uid.toLowerCase().includes(query);
+        return groupMatch && queryMatch;
+      });
+
+      grid.innerHTML = visible.map((item) => {
+        const position = videos.indexOf(item) + 1;
+        const label = item.group === "beak" ? "Beak" : "Non-beak";
+        const portrait = /-c(?:1[1-9]|20)-s[12]-/.test(item.uid);
+        return `
+          <article class="video-card ${portrait ? "portrait" : "landscape"}" data-group="${item.group}">
+            <div class="video-wrap">
+              <video controls preload="none" playsinline aria-label="${item.name} generated video">
+                <source src="${item.url}" type="video/mp4">
+              </video>
+              <span class="index">${String(position).padStart(2, "0")} / 40</span>
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <h2>${item.name}</h2>
+                <span class="badge ${item.group === "beak" ? "beak" : ""}">${label}</span>
+              </div>
+              <p class="run-id" title="${item.uid}">${item.uid}</p>
+              <div class="card-foot">
+                <span class="runtime">${formatRuntime(item.seconds)}</span>
+                <a class="cdn-link" href="${item.url}" target="_blank" rel="noopener noreferrer">Open CDN video ↗</a>
+              </div>
+            </div>
+          </article>`;
+      }).join("");
+
+      results.textContent = `Showing ${visible.length} of ${videos.length} videos`;
+      empty.style.display = visible.length ? "none" : "block";
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeFilter = button.dataset.filter;
+        filterButtons.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+        render();
+      });
+    });
+
+    search.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

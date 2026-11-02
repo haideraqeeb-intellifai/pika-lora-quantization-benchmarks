@@ -1,0 +1,24 @@
+{
+  "cases": 5,
+  "scored_frames_original_vs_fp8": 1810,
+  "native_fp8_gemm_calls": 5330,
+  "bf16_fallbacks": 0,
+  "all_bf16_controls_pixel_identical": true,
+  "gpu_ownership_samples": 361,
+  "competing_workload_samples": 0,
+  "browser": {
+    "cases": 5,
+    "metric_rows": 5,
+    "relative_assets": 66,
+    "missing_assets": [],
+    "filter": "PASS",
+    "reference_switch": "PASS",
+    "paired_playback": "PASS",
+    "drift_seconds": 0.04542199999999852,
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390
+    },
+    "js_errors": []
+  }
+}

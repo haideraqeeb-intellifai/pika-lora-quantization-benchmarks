@@ -1,0 +1,17 @@
+{
+  "python": "3.12",
+  "observed_packages": {
+    "torch": "2.11.0+cu130",
+    "sageattention": "2.2.0",
+    "comfy-kitchen": "0.2.26",
+    "comfy-aimdo": "0.4.11",
+    "av": "18.1.0",
+    "transformers": "5.16.1",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.26.0",
+    "requests": "2.34.2"
+  },
+  "note": "Observed GPU environment, not a complete lockfile. The external inference checkout supplies additional dependencies."
+}

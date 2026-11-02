@@ -1,0 +1,15 @@
+{
+  "cases": 5,
+  "metric_rows": 5,
+  "relative_assets": 66,
+  "missing_assets": [],
+  "filter": "PASS",
+  "reference_switch": "PASS",
+  "paired_playback": "PASS",
+  "drift_seconds": 0.04542199999999852,
+  "mobile": {
+    "viewport": 390,
+    "document_width": 390
+  },
+  "js_errors": []
+}

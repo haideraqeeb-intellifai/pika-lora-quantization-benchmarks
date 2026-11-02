@@ -1,0 +1,7 @@
+{
+  "red-fox": "At the sampled timestamps, identity, framing, background and overall motion remain close. Small differences appear in the mouth opening, eye detail and fur. No large pose or scene change is apparent in these samples; this is a qualitative frame review, not a perceptual-quality score.",
+  "bengal-tiger": "The sampled frames retain the tiger identity, stripes, studio layout and general pose. Small head-position and mouth-articulation differences appear, particularly later in the clip. No large composition change is visible in these samples.",
+  "african-elephant": "The sampled frames preserve the elephant identity, studio composition and seated pose. Differences are visible in trunk position, ears and fine skin texture. There is no large scene or identity change in these samples.",
+  "scarlet-macaw": "The sampled frames remain very close in bird identity, feather colors, studio composition and general pose. Small differences are visible in feather detail, beak position and posture. No large scene change is apparent in these samples.",
+  "barn-owl": "The sampled portrait frames preserve the owl identity, heart-shaped facial disk, feather colors and studio framing. Small differences appear in beak opening, head alignment and feather edges. No large pose or scene change is visible in these samples."
+}

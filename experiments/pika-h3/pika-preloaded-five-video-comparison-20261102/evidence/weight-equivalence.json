@@ -1,0 +1,5 @@
+{
+  "fp8_weights_exactly_match_previous_on_load_quantization": 416,
+  "fp32_scales_exactly_match": 416,
+  "scope": "CPU comparison against the exact quantize_weight formula used in the previous FP8 benchmark; no GPU inference or timing change."
+}

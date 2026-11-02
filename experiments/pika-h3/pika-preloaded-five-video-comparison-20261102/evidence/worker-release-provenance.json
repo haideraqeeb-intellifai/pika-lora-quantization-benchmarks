@@ -1,0 +1,86 @@
+[
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/minimax_h3_turbo/pika_nodes.py",
+    "source_blob": "a218832149edef69adafdeddcd1e1e288b53fce0",
+    "benchmark_blob": "a218832149edef69adafdeddcd1e1e288b53fce0",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/minimax_h3_turbo/workflow.py",
+    "source_blob": "7dff26a12dc0f2ddbb02eb4e754091c3cc97d04f",
+    "benchmark_blob": "7dff26a12dc0f2ddbb02eb4e754091c3cc97d04f",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/minimax_h3_turbo/assets.py",
+    "source_blob": "88550ee3df1d7c10c4eccd4c20d1ea501251ae84",
+    "benchmark_blob": "88550ee3df1d7c10c4eccd4c20d1ea501251ae84",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy_extras/nodes_minimax_h3.py",
+    "source_blob": "f607d9ae30e0e41a11aa89956a5858c90931d9ba",
+    "benchmark_blob": "f607d9ae30e0e41a11aa89956a5858c90931d9ba",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy/ldm/minimax/model.py",
+    "source_blob": "988b09e56a72b8cc20a3fd3c9e6475491cf5df88",
+    "benchmark_blob": "988b09e56a72b8cc20a3fd3c9e6475491cf5df88",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.125",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy/model_base.py",
+    "source_blob": "cc8768444119968834ca45b2ba85ae1e1b08a1f7",
+    "benchmark_blob": "cc8768444119968834ca45b2ba85ae1e1b08a1f7",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/minimax_h3_turbo/pika_nodes.py",
+    "source_blob": "a218832149edef69adafdeddcd1e1e288b53fce0",
+    "benchmark_blob": "a218832149edef69adafdeddcd1e1e288b53fce0",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/minimax_h3_turbo/workflow.py",
+    "source_blob": "7dff26a12dc0f2ddbb02eb4e754091c3cc97d04f",
+    "benchmark_blob": "7dff26a12dc0f2ddbb02eb4e754091c3cc97d04f",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/minimax_h3_turbo/assets.py",
+    "source_blob": "88550ee3df1d7c10c4eccd4c20d1ea501251ae84",
+    "benchmark_blob": "88550ee3df1d7c10c4eccd4c20d1ea501251ae84",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy_extras/nodes_minimax_h3.py",
+    "source_blob": "f607d9ae30e0e41a11aa89956a5858c90931d9ba",
+    "benchmark_blob": "f607d9ae30e0e41a11aa89956a5858c90931d9ba",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy/ldm/minimax/model.py",
+    "source_blob": "988b09e56a72b8cc20a3fd3c9e6475491cf5df88",
+    "benchmark_blob": "988b09e56a72b8cc20a3fd3c9e6475491cf5df88",
+    "identical": true
+  },
+  {
+    "worker_release": "v4.9.129",
+    "path": "ml_modules/comfy_ui/comfy_v14/comfy/model_base.py",
+    "source_blob": "cc8768444119968834ca45b2ba85ae1e1b08a1f7",
+    "benchmark_blob": "cc8768444119968834ca45b2ba85ae1e1b08a1f7",
+    "identical": true
+  }
+]

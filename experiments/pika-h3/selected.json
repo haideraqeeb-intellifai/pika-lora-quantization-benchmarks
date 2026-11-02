@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Red Fox",
+    "group": "non-beak",
+    "uid": "animal-pika-flex-report-redfox-c01-s1-articulation-paws-v2-20261102-s1",
+    "source_report_seconds": 194.513,
+    "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-redfox-c01-s1-articulation-paws-v2-20261102-s1.mp4"
+  },
+  {
+    "name": "Bengal Tiger",
+    "group": "non-beak",
+    "uid": "animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1",
+    "source_report_seconds": 189.057,
+    "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1.mp4"
+  },
+  {
+    "name": "African Elephant",
+    "group": "non-beak",
+    "uid": "animal-pika-batch-nonbeak-elephant-c05-s1-v2-20261102-s1",
+    "source_report_seconds": 186.725,
+    "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-nonbeak-elephant-c05-s1-v2-20261102-s1.mp4"
+  },
+  {
+    "name": "Scarlet Macaw",
+    "group": "beak",
+    "uid": "animal-pika-flex-report-macaw-articulation-wing-v2-20261031-s1",
+    "source_report_seconds": 180.531,
+    "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-macaw-articulation-wing-v2-20261031-s1.mp4"
+  },
+  {
+    "name": "Barn Owl",
+    "group": "beak",
+    "uid": "animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1",
+    "source_report_seconds": 166.632,
+    "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-batch-beak-barnowl-c12-s2-v2-portrait-20261102-s1.mp4"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "path": "/home/raqeeb/code/pika-h3/agent/pika-fp8/pika-preloaded-five-video-comparison-20261102",
+  "files": 187,
+  "overview": {
+    "cases": 5,
+    "successful_video_generations": 15,
+    "mean_seconds": {
+      "bf16": 185.0980682577996,
+      "fp8": 186.85714022259927,
+      "int8": 185.25945519640226
+    },
+    "aggregate_speedup_vs_fresh_bf16": {
+      "fp8": 0.9905860061718589,
+      "int8": 0.999128859909301
+    },
+    "time_reduction_percent_vs_fresh_bf16": {
+      "fp8": -0.9503459335673092,
+      "int8": -0.08718996374281751
+    },
+    "gpu_ownership_samples": 579,
+    "competing_gpu_workloads_detected": 0,
+    "bf16_controls_pixel_identical_to_published_originals": 5,
+    "fp8_preloaded_pixel_identical_to_previous_fp8": 4,
+    "scored_frames_per_five_video_comparison": 1810,
+    "caveat": "One measured request per case and configuration; small timing differences can be normal run-to-run variation."
+  }
+}

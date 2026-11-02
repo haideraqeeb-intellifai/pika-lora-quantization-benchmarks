@@ -1,0 +1,102 @@
+{
+  "case": "red-fox",
+  "precision": "bf16",
+  "source_uid": "animal-pika-flex-report-redfox-c01-s1-articulation-paws-v2-20261102-s1",
+  "configuration": {
+    "input_mode": "fl2v",
+    "requested_width": 1280,
+    "requested_height": 720,
+    "native_width": 1280,
+    "native_height": 736,
+    "requested_frames": 360,
+    "effective_frames": 362,
+    "reference_images": 0,
+    "reference_videos": 0,
+    "reference_audios": 0,
+    "seed": 427739230855701667,
+    "optimization": {
+      "profile": "pika_flex",
+      "attention_backend": "sage2",
+      "step_accelerator": "none",
+      "approximate": true
+    },
+    "optimizer_parameters": {
+      "easycache": null,
+      "sol": null,
+      "spectrum": null
+    },
+    "diffusion_checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "model_revision": "0bd506d2e895983a9663037febda27aa3948cf48",
+    "lora": "pika_h3_flex_fl2va_comfy_bf16.safetensors",
+    "lora_revision": "Pika-Labs/Pika-H3-Flex@3ff166447d5edb1406107ab8370c42000ce173e4",
+    "lora_strength": 1.0,
+    "lora_low_vram": false,
+    "turbo_commit": null,
+    "sampler": "MiniMaxH3PikaSampler",
+    "steps": 3,
+    "denoise": 1.0,
+    "scheduler": "pika_knots",
+    "sigma_shift_video": 12.0,
+    "sigma_shift_audio": 3.0,
+    "output_frames": 362,
+    "fps": 24.0
+  },
+  "gpu": "NVIDIA GeForce RTX 5090, GPU-c2beb57c-2ee3-c3f4-eef3-fd2e0ca955c8, 595.84",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "sageattention": "2.2.0",
+    "comfy-kitchen": "0.2.26",
+    "comfy-aimdo": "0.4.11",
+    "av": "18.1.0",
+    "transformers": "5.16.1"
+  },
+  "runs": [
+    {
+      "uid": "pika-fp8-ab-red-fox-bf16-20261102-r1",
+      "start_utc": "2026-11-02T14:44:43Z",
+      "effective": {
+        "input_mode": "fl2v",
+        "requested_width": 1280,
+        "requested_height": 720,
+        "native_width": 1280,
+        "native_height": 736,
+        "requested_frames": 360,
+        "effective_frames": 362,
+        "reference_images": 0,
+        "reference_videos": 0,
+        "reference_audios": 0,
+        "seed": 427739230855701667,
+        "optimization": {
+          "profile": "pika_flex",
+          "attention_backend": "sage2",
+          "step_accelerator": "none",
+          "approximate": true
+        },
+        "optimizer_parameters": {
+          "easycache": null,
+          "sol": null,
+          "spectrum": null
+        },
+        "diffusion_checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "model_revision": "0bd506d2e895983a9663037febda27aa3948cf48",
+        "lora": "pika_h3_flex_fl2va_comfy_bf16.safetensors",
+        "lora_revision": "Pika-Labs/Pika-H3-Flex@3ff166447d5edb1406107ab8370c42000ce173e4",
+        "lora_strength": 1.0,
+        "lora_low_vram": false,
+        "turbo_commit": null,
+        "sampler": "MiniMaxH3PikaSampler",
+        "steps": 3,
+        "denoise": 1.0,
+        "scheduler": "pika_knots",
+        "sigma_shift_video": 12.0,
+        "sigma_shift_audio": 3.0,
+        "output_frames": 362,
+        "fps": 24.0
+      },
+      "status": "failed",
+      "execution_seconds": 0.98231002499233,
+      "traceback": "Traceback (most recent call last):\n  File \"/home/raqeeb/code/pika-h3/agent/pika-fp8/run_case.py\", line 77, in <module>\n    observation=engine.infer(models,graph,prompt_id=uid,timeout_seconds=9000)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/minimax_h3_turbo/infer.py\", line 62, in infer\n    return runtime.infer(models, workflow, prompt_id, timeout_seconds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/minimax_h3_turbo/runtime.py\", line 450, in infer\n    raise RuntimeError(\"ComfyUI execution failed: \" + json.dumps(failures[-1] if failures else {}))\nRuntimeError: ComfyUI execution failed: {\"prompt_id\": \"pika-fp8-ab-red-fox-bf16-20261102-r1\", \"node_id\": \"5\", \"node_type\": \"MiniMaxH3ImageToVideo\", \"executed\": [\"2\", \"4\", \"21\", \"20\", \"3\", \"22\"], \"exception_message\": \"MiniMaxH3ImageToVideo.execute() got an unexpected keyword argument 'audio_vae'\\n\", \"exception_type\": \"TypeError\", \"traceback\": [\"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\", \"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/execution.py\\\", line 344, in get_output_data\\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\", \"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/execution.py\\\", line 318, in _async_map_node_over_list\\n    await process_inputs(input_dict, i)\\n\", \"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/execution.py\\\", line 306, in process_inputs\\n    result = f(**inputs)\\n             ^^^^^^^^^^^\\n\", \"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/comfy_api/internal/__init__.py\\\", line 149, in wrapped_func\\n    return method(locked_class, **inputs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\", \"  File \\\"/home/raqeeb/code/pika-h3/agent/pika-fp8/source/ml_modules/comfy_ui/comfy_v14/comfy_api/latest/_io.py\\\", line 1935, in EXECUTE_NORMALIZED\\n    to_return = cls.execute(*args, **kwargs)\\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\"], \"current_inputs\": {\"clip\": [\"<comfy.sd.CLIP object at 0x71f5260ab980>\"], \"vae\": [\"<comfy.sd.VAE object at 0x71f526150170>\"], \"prompt\": [\"How the reference pictures align with the target video \\u2014 Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.\\n\\nintegrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same red fox from <Picture 1> remains in the established podcast setting, retaining the exact face, natural muzzle, red and white fur pattern, natural forepaw anatomy, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with <Picture 1>.\\n\\nFrom 00:00.000 onward, the red fox delivers the supplied speech with clear, natural species-appropriate articulation. The mouth and jaw visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the mouth returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.\\n\\nFrom 00:04.500 to 00:06.500, while continuing the speech articulation, one existing forepaw makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing forepaw makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the red fox's natural forepaw anatomy and fur.\\n\\nThe camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the red fox's mouth, jaw, throat, eyes, head and existing forepaws move; the camera, framing, background and props remain stationary.\\n\\nFrom 00:13.300 to 00:15.080, the red fox smoothly returns its head, forepaws and posture to the exact neutral state of <Picture 2> while continuing any remaining speech articulation. Exactly one red fox remains visible with consistent natural anatomy. No additional subjects, extra forepaws, duplicate props, captions, logos, watermarks or on-screen text appear.\\n\\noverall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.\\n\\nnon_diegetic_music: N/A\"], \"width\": [1280], \"height\": [736], \"length\": [362], \"first_frame\": [\"tensor([[[[0.4078, 0.3686, 0.3451],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549]],\\n\\n         [[0.4078, 0.3686, 0.3451],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549]],\\n\\n         [[0.4039, 0.3647, 0.3412],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2706, 0.2627, 0.2588],\\n          [0.2706, 0.2627, 0.2588],\\n          [0.2706, 0.2627, 0.2588]],\\n\\n         ...,\\n\\n         [[0.8235, 0.6431, 0.5255],\\n          [0.8235, 0.6431, 0.5255],\\n          [0.8235, 0.6431, 0.5255],\\n          ...,\\n          [0.0392, 0.0353, 0.0118],\\n          [0.0471, 0.0431, 0.0196],\\n          [0.0549, 0.0510, 0.0275]],\\n\\n         [[0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          ...,\\n          [0.0431, 0.0392, 0.0157],\\n          [0.0510, 0.0471, 0.0235],\\n          [0.0588, 0.0549, 0.0314]],\\n\\n         [[0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          ...,\\n          [0.0431, 0.0392, 0.0157],\\n          [0.0549, 0.0510, 0.0275],\\n          [0.0627, 0.0588, 0.0353]]]])\"], \"last_frame\": [\"tensor([[[[0.4078, 0.3686, 0.3451],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549]],\\n\\n         [[0.4078, 0.3686, 0.3451],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549],\\n          [0.2667, 0.2588, 0.2549]],\\n\\n         [[0.4039, 0.3647, 0.3412],\\n          [0.4039, 0.3647, 0.3412],\\n          [0.4000, 0.3608, 0.3373],\\n          ...,\\n          [0.2706, 0.2627, 0.2588],\\n          [0.2706, 0.2627, 0.2588],\\n          [0.2706, 0.2627, 0.2588]],\\n\\n         ...,\\n\\n         [[0.8235, 0.6431, 0.5255],\\n          [0.8235, 0.6431, 0.5255],\\n          [0.8235, 0.6431, 0.5255],\\n          ...,\\n          [0.0392, 0.0353, 0.0118],\\n          [0.0471, 0.0431, 0.0196],\\n          [0.0549, 0.0510, 0.0275]],\\n\\n         [[0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          ...,\\n          [0.0431, 0.0392, 0.0157],\\n          [0.0510, 0.0471, 0.0235],\\n          [0.0588, 0.0549, 0.0314]],\\n\\n         [[0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          [0.8275, 0.6471, 0.5373],\\n          ...,\\n          [0.0431, 0.0392, 0.0157],\\n          [0.0549, 0.0510, 0.0275],\\n          [0.0627, 0.0588, 0.0353]]]])\"], \"audio_vae\": [\"<comfy.sd.VAE object at 0x71f5261d7fe0>\"], \"audio\": [\"{'waveform': tensor([[[ 0.0000,  0.0000,  0.0000,  ..., -0.0106, -0.0222, -0.0302],\\n         [ 0.0000,  0.0000,  0.0000,  ..., -0.0106, -0.0222, -0.0302]]]), 'sample_rate': 48000}\"]}, \"current_outputs\": [], \"timestamp\": 1793630684200}\n"
+    }
+  ],
+  "runtime_initialization_seconds": 4.563138035009615
+}

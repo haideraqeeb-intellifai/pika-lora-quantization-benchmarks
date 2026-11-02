@@ -1,0 +1,122 @@
+{
+  "name": "Bengal Tiger",
+  "group": "non-beak",
+  "uid": "animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1",
+  "source_report_seconds": 189.057,
+  "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1.mp4",
+  "slug": "bengal-tiger",
+  "message": {
+    "uid": "animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1",
+    "prompt": "How the reference pictures align with the target video \u2014 Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 15.08-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action animal podcast footage in one continuous medium shot. The same Bengal tiger from <Picture 1> remains in the established podcast setting, retaining the exact face, natural muzzle, orange fur with black stripes, natural forepaw anatomy, body proportions and calm expression. The microphone, desk, chair, studio background, lighting, depth of field and relative placement of every object remain visually consistent with <Picture 1>.\n\nFrom 00:00.000 onward, the Bengal tiger delivers the supplied speech with clear, natural species-appropriate articulation. The mouth and jaw visibly articulate at the timing, rhythm and intensity of every spoken phrase, with small coordinated throat and head motion. During every pause in the supplied audio, the mouth returns to a relaxed closed position. Natural blinking, quiet breathing and tiny attentive gaze adjustments support the delivery.\n\nFrom 00:04.500 to 00:06.500, while continuing the speech articulation, one existing forepaw makes one small but clearly visible conversational gesture away from its resting position, then returns naturally to the same resting position. From 00:09.000 to 00:11.000, the other existing forepaw makes one small, clearly visible conversational gesture and returns to rest. Both gestures preserve the Bengal tiger's natural forepaw anatomy and fur.\n\nThe camera is locked to a stationary tripod at one fixed position and angle for the full shot. The microphone base, boom-arm pivots, horizontal desk edge, chair edges and background panel seams remain at the same frame coordinates. Lens perspective, subject scale and object spacing remain constant. Only the Bengal tiger's mouth, jaw, throat, eyes, head and existing forepaws move; the camera, framing, background and props remain stationary.\n\nFrom 00:13.300 to 00:15.080, the Bengal tiger smoothly returns its head, forepaws and posture to the exact neutral state of <Picture 2> while continuing any remaining speech articulation. Exactly one Bengal tiger remains visible with consistent natural anatomy. No additional subjects, extra forepaws, duplicate props, captions, logos, watermarks or on-screen text appear.\n\noverall_soundscape: The supplied podcast speech audio remains prominent and unchanged, with faint steady indoor studio room tone. No additional voices, dialogue or sound effects are introduced.\n\nnon_diegetic_music: N/A",
+    "input_mode": "fl2v",
+    "image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/tala-the-bengal-tiger-01a17884-0bd0-7029-bf5e-3ca0ae21645c-headshot.jpg",
+    "last_image_path": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/tala-the-bengal-tiger-01a17884-0bd0-7029-bf5e-3ca0ae21645c-headshot.jpg",
+    "reference_image_paths": [],
+    "reference_video_paths": [],
+    "reference_audio_paths": [],
+    "model": "pika_flex",
+    "lipsync_mode": false,
+    "audio_path": "https://s3.renderplatform.com/user-assets/preview/ffmpeg/animal-h3-turbo-fl2v-15s-audio-20261029-c02-s1.wav",
+    "lora": "none",
+    "ref_image_size": "match",
+    "width": 1280,
+    "height": 720,
+    "num_frames": 360,
+    "fps": 24.0,
+    "seed": 427739230855701667,
+    "num_inference_steps": 3,
+    "sampler_name": "MiniMaxH3TurboSampler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "diffusion_model": "int8_convrot",
+    "weight_dtype": "default",
+    "clip_device": "default",
+    "attention_backend": "sage2",
+    "step_accelerator": "none",
+    "use_easycache": false,
+    "use_sigma_shift": false,
+    "bit_depth": 8,
+    "container_format": "auto",
+    "codec": "auto",
+    "crf": 23,
+    "timeout_seconds": 9000,
+    "webhook_url": ""
+  },
+  "files": {
+    "image_path": {
+      "url": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/tala-the-bengal-tiger-01a17884-0bd0-7029-bf5e-3ca0ae21645c-headshot.jpg",
+      "path": "cases/bengal-tiger/image_path.jpg",
+      "bytes": 145657,
+      "sha256": "721d465e615093022d91c7c298aa8f1a4779238e9d4dab215fe43ba5bdbc49bf"
+    },
+    "last_image_path": {
+      "url": "https://cdn.podcastflow.ai/user-assets/staging/2026/10/26/avatars/headshots/tala-the-bengal-tiger-01a17884-0bd0-7029-bf5e-3ca0ae21645c-headshot.jpg",
+      "path": "cases/bengal-tiger/last_image_path.jpg",
+      "bytes": 145657,
+      "sha256": "721d465e615093022d91c7c298aa8f1a4779238e9d4dab215fe43ba5bdbc49bf"
+    },
+    "audio_path": {
+      "url": "https://s3.renderplatform.com/user-assets/preview/ffmpeg/animal-h3-turbo-fl2v-15s-audio-20261029-c02-s1.wav",
+      "path": "cases/bengal-tiger/audio_path.wav",
+      "bytes": 2880078,
+      "sha256": "a808b82f46a0ef883c5c56d31b409114354aebfceaac3d353e6e23ba7de01cd9"
+    },
+    "original": {
+      "url": "https://user-assets.renderplatform.com/preview/generated_video/animal-pika-flex-report-tiger-c02-s1-articulation-paws-v2-20261102-s1.mp4",
+      "path": "cases/bengal-tiger/original.mp4",
+      "bytes": 2277721,
+      "sha256": "bfdd4d1e63f43888889307a6dad1673d69c5223ed052029ef306dc2e2a37943a"
+    }
+  },
+  "source_host": "gpu5090-157",
+  "source_timings": {
+    "asset_preparation_seconds": 0.658,
+    "comfy_execution_seconds": 188.365,
+    "output_finalize_upload_seconds": 0.034,
+    "end_to_end_seconds": 189.057
+  },
+  "source_effective": {
+    "input_mode": "fl2v",
+    "requested_width": 1280,
+    "requested_height": 720,
+    "native_width": 1280,
+    "native_height": 736,
+    "requested_frames": 360,
+    "effective_frames": 362,
+    "reference_images": 0,
+    "reference_videos": 0,
+    "reference_audios": 0,
+    "seed": 427739230855701667,
+    "optimization": {
+      "profile": "pika_flex",
+      "attention_backend": "sage2",
+      "step_accelerator": "none",
+      "approximate": true
+    },
+    "optimizer_parameters": {
+      "easycache": null,
+      "sol": null,
+      "spectrum": null
+    },
+    "diffusion_checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "model_revision": "0bd506d2e895983a9663037febda27aa3948cf48",
+    "lora": "pika_h3_flex_fl2va_comfy_bf16.safetensors",
+    "lora_revision": "Pika-Labs/Pika-H3-Flex@3ff166447d5edb1406107ab8370c42000ce173e4",
+    "lora_strength": 1.0,
+    "lora_low_vram": false,
+    "turbo_commit": null,
+    "sampler": "MiniMaxH3PikaSampler",
+    "steps": 3,
+    "denoise": 1.0,
+    "scheduler": "pika_knots",
+    "sigma_shift_video": 12.0,
+    "sigma_shift_audio": 3.0,
+    "output_frames": 362,
+    "fps": 24.0
+  },
+  "source_server_start": "2026-11-02T08:47:37.875962+00:00",
+  "source_server_end": "2026-11-02T08:50:46.932636+00:00",
+  "audio_duration": 15.0,
+  "source_worker_release": "v4.9.129",
+  "source_gateway_revision": "d1e404c"
+}

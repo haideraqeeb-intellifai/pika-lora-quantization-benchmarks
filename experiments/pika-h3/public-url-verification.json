@@ -1,0 +1,22 @@
+[
+  {
+    "path": "comparison.html",
+    "status": 200,
+    "content_type": "text/html"
+  },
+  {
+    "path": "results.json",
+    "status": 200,
+    "content_type": "application/json"
+  },
+  {
+    "path": "verification-summary.json",
+    "status": 200,
+    "content_type": "application/json"
+  },
+  {
+    "path": "media/bengal-tiger/fp8.mp4",
+    "status": 200,
+    "content_type": "video/mp4"
+  }
+]

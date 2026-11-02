@@ -1,0 +1,95 @@
+{
+  "url": "https://s3.renderplatform.com/agent-assets/Raqeeb/pika-preloaded-five-video-comparison-20261102/comparison.html",
+  "checks": [
+    {
+      "path": "comparison.html",
+      "status": 200,
+      "matches_local_sha256": true
+    },
+    {
+      "path": "summary.json",
+      "status": 200,
+      "matches_local_sha256": true
+    },
+    {
+      "path": "verification-summary.json",
+      "status": 200,
+      "matches_local_sha256": true
+    },
+    {
+      "path": "media/scarlet-macaw/bf16.mp4",
+      "status": 200,
+      "bytes": 1442855
+    },
+    {
+      "path": "media/scarlet-macaw/fp8.mp4",
+      "status": 200,
+      "bytes": 1456742
+    },
+    {
+      "path": "media/scarlet-macaw/int8.mp4",
+      "status": 200,
+      "bytes": 1481271
+    },
+    {
+      "path": "media/barn-owl/bf16.mp4",
+      "status": 200,
+      "bytes": 1795986
+    },
+    {
+      "path": "media/barn-owl/fp8.mp4",
+      "status": 200,
+      "bytes": 1777380
+    },
+    {
+      "path": "media/barn-owl/int8.mp4",
+      "status": 200,
+      "bytes": 1769678
+    },
+    {
+      "path": "media/african-elephant/bf16.mp4",
+      "status": 200,
+      "bytes": 2399454
+    },
+    {
+      "path": "media/african-elephant/fp8.mp4",
+      "status": 200,
+      "bytes": 2403831
+    },
+    {
+      "path": "media/african-elephant/int8.mp4",
+      "status": 200,
+      "bytes": 2392016
+    },
+    {
+      "path": "media/bengal-tiger/bf16.mp4",
+      "status": 200,
+      "bytes": 2277547
+    },
+    {
+      "path": "media/bengal-tiger/fp8.mp4",
+      "status": 200,
+      "bytes": 2276358
+    },
+    {
+      "path": "media/bengal-tiger/int8.mp4",
+      "status": 200,
+      "bytes": 2279572
+    },
+    {
+      "path": "media/red-fox/bf16.mp4",
+      "status": 200,
+      "bytes": 1876250
+    },
+    {
+      "path": "media/red-fox/fp8.mp4",
+      "status": 200,
+      "bytes": 1901752
+    },
+    {
+      "path": "media/red-fox/int8.mp4",
+      "status": 200,
+      "bytes": 1883056
+    }
+  ]
+}

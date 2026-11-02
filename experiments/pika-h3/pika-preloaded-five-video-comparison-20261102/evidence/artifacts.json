@@ -1,0 +1,20 @@
+{
+  "fp8": {
+    "path": "preloaded/pika-fp8.safetensors",
+    "bytes": 978164048,
+    "sha256": "8e135b33334defd7b4b6c9de200dcbc80127d2e4e2eefa92c9acbd6748ab7f09",
+    "offline_quantize_and_save_seconds": 1.1671500650118105,
+    "weight_tensors": 416,
+    "scale_tensors": 416,
+    "source_sha256": "68783e6447696ec365d13c0554941e070bee4cfea13c37da52498ec4f9a53f89"
+  },
+  "int8": {
+    "path": "preloaded/pika-int8.safetensors",
+    "bytes": 978161968,
+    "sha256": "f287698c2717abccddc158cb26321dcf574ef26bceeb5682b4f36c1d1c46f218",
+    "offline_quantize_and_save_seconds": 1.2703176509821787,
+    "weight_tensors": 416,
+    "scale_tensors": 416,
+    "source_sha256": "68783e6447696ec365d13c0554941e070bee4cfea13c37da52498ec4f9a53f89"
+  }
+}

@@ -1,0 +1,1 @@
+{"path": "easycache-bf16/models/diffusion_models/minimax_h3_fl2va_pruned_bf16.safetensors", "bytes": 40225724176, "sha256": "a32572fb90b5508b201ec7c2eddcc184b13ddfd3c6f6d2cf06a0b46535d541b4", "download_and_verify_seconds": 156.2231392340036, "repository": "Comfy-Org/MiniMax-H3", "revision": "0bd506d2e895983a9663037febda27aa3948cf48"}

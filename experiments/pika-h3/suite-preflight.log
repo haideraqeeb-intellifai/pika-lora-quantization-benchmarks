@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/raqeeb/code/pika-h3/agent/pika-fp8/run_suite.py", line 40, in <module>
+    if processes or int(gpu.split(',')[1])!=0 or int(gpu.split(',')[2])>2:
+ValueError: invalid literal for int() with base 10: ' 0 %'

@@ -1,0 +1,162 @@
+[
+  {
+    "case": "red-fox",
+    "role": "image_path",
+    "path": "cases/red-fox/image_path.jpg",
+    "sha256": "0ed642fd9be8e22ab45055de52640c72dca627e993d91e70002e219569514f8c",
+    "matches_recorded_hash": true,
+    "bytes": 124108
+  },
+  {
+    "case": "red-fox",
+    "role": "last_image_path",
+    "path": "cases/red-fox/last_image_path.jpg",
+    "sha256": "0ed642fd9be8e22ab45055de52640c72dca627e993d91e70002e219569514f8c",
+    "matches_recorded_hash": true,
+    "bytes": 124108
+  },
+  {
+    "case": "red-fox",
+    "role": "audio_path",
+    "path": "cases/red-fox/audio_path.wav",
+    "sha256": "7a05030ac0d1d3f0af36e61f62fc9c280d4f8738b293521553d3349f5aa9842c",
+    "matches_recorded_hash": true,
+    "bytes": 2880078
+  },
+  {
+    "case": "red-fox",
+    "role": "original",
+    "path": "cases/red-fox/original.mp4",
+    "sha256": "16363581b50903f1104ec9ee0b5c99ad3515dc7bd27a8a47fc903c107d15d6b9",
+    "matches_recorded_hash": true,
+    "bytes": 1876429
+  },
+  {
+    "case": "bengal-tiger",
+    "role": "image_path",
+    "path": "cases/bengal-tiger/image_path.jpg",
+    "sha256": "721d465e615093022d91c7c298aa8f1a4779238e9d4dab215fe43ba5bdbc49bf",
+    "matches_recorded_hash": true,
+    "bytes": 145657
+  },
+  {
+    "case": "bengal-tiger",
+    "role": "last_image_path",
+    "path": "cases/bengal-tiger/last_image_path.jpg",
+    "sha256": "721d465e615093022d91c7c298aa8f1a4779238e9d4dab215fe43ba5bdbc49bf",
+    "matches_recorded_hash": true,
+    "bytes": 145657
+  },
+  {
+    "case": "bengal-tiger",
+    "role": "audio_path",
+    "path": "cases/bengal-tiger/audio_path.wav",
+    "sha256": "a808b82f46a0ef883c5c56d31b409114354aebfceaac3d353e6e23ba7de01cd9",
+    "matches_recorded_hash": true,
+    "bytes": 2880078
+  },
+  {
+    "case": "bengal-tiger",
+    "role": "original",
+    "path": "cases/bengal-tiger/original.mp4",
+    "sha256": "bfdd4d1e63f43888889307a6dad1673d69c5223ed052029ef306dc2e2a37943a",
+    "matches_recorded_hash": true,
+    "bytes": 2277721
+  },
+  {
+    "case": "african-elephant",
+    "role": "image_path",
+    "path": "cases/african-elephant/image_path.jpg",
+    "sha256": "ae81a5bf4e75e9225cad2e9fcff0e326c87ecd7b62c85b0dfd67293f7620bf56",
+    "matches_recorded_hash": true,
+    "bytes": 146914
+  },
+  {
+    "case": "african-elephant",
+    "role": "last_image_path",
+    "path": "cases/african-elephant/last_image_path.jpg",
+    "sha256": "ae81a5bf4e75e9225cad2e9fcff0e326c87ecd7b62c85b0dfd67293f7620bf56",
+    "matches_recorded_hash": true,
+    "bytes": 146914
+  },
+  {
+    "case": "african-elephant",
+    "role": "audio_path",
+    "path": "cases/african-elephant/audio_path.wav",
+    "sha256": "6960bbd892a7683a81a1c279f368d520807adc0c09e3319a3ff8871639aac118",
+    "matches_recorded_hash": true,
+    "bytes": 2880078
+  },
+  {
+    "case": "african-elephant",
+    "role": "original",
+    "path": "cases/african-elephant/original.mp4",
+    "sha256": "dba9e01b6172ba15ef06c0fb38cc1e70630baa76591be58364ed0c052757a638",
+    "matches_recorded_hash": true,
+    "bytes": 2399624
+  },
+  {
+    "case": "scarlet-macaw",
+    "role": "image_path",
+    "path": "cases/scarlet-macaw/image_path.jpg",
+    "sha256": "51786e6f682bf6d36bf4550de3fb42d9547d16c558b2703ad0fc69f1ed889070",
+    "matches_recorded_hash": true,
+    "bytes": 117116
+  },
+  {
+    "case": "scarlet-macaw",
+    "role": "last_image_path",
+    "path": "cases/scarlet-macaw/last_image_path.jpg",
+    "sha256": "51786e6f682bf6d36bf4550de3fb42d9547d16c558b2703ad0fc69f1ed889070",
+    "matches_recorded_hash": true,
+    "bytes": 117116
+  },
+  {
+    "case": "scarlet-macaw",
+    "role": "audio_path",
+    "path": "cases/scarlet-macaw/audio_path.wav",
+    "sha256": "39cc0f3e3ec47ca6fa81417e528e6069a0a3b4bbeaa35bbf2a499b9c8a6bf5b6",
+    "matches_recorded_hash": true,
+    "bytes": 2880078
+  },
+  {
+    "case": "scarlet-macaw",
+    "role": "original",
+    "path": "cases/scarlet-macaw/original.mp4",
+    "sha256": "2d309a5580a180738d0aa305b42b2aaa22d2de4a04488bef8c71ea0534736193",
+    "matches_recorded_hash": true,
+    "bytes": 1443028
+  },
+  {
+    "case": "barn-owl",
+    "role": "image_path",
+    "path": "cases/barn-owl/image_path.jpg",
+    "sha256": "038435179bc56839bd75685fff5cadc6d17397dd6366a988cd3ffbc15ecae052",
+    "matches_recorded_hash": true,
+    "bytes": 121244
+  },
+  {
+    "case": "barn-owl",
+    "role": "last_image_path",
+    "path": "cases/barn-owl/last_image_path.jpg",
+    "sha256": "038435179bc56839bd75685fff5cadc6d17397dd6366a988cd3ffbc15ecae052",
+    "matches_recorded_hash": true,
+    "bytes": 121244
+  },
+  {
+    "case": "barn-owl",
+    "role": "audio_path",
+    "path": "cases/barn-owl/audio_path.wav",
+    "sha256": "500e4945d0cb33eb7bf83cdc2959f3eba8ce229ee0386a67a223d39d3570af06",
+    "matches_recorded_hash": true,
+    "bytes": 2880078
+  },
+  {
+    "case": "barn-owl",
+    "role": "original",
+    "path": "cases/barn-owl/original.mp4",
+    "sha256": "104131735d1a6ce57c98cb4e57bb7a130cb03f09905c157cdbb2d4a28a1e02e0",
+    "matches_recorded_hash": true,
+    "bytes": 1796164
+  }
+]
