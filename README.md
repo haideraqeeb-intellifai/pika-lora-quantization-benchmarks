@@ -78,7 +78,7 @@ The scripts retain their measured file layout and cached per-frame metrics. Exis
 Browser verification uses Node.js 22 and Chrome with H.264 support. The excluded browser installer is precisely referenced in `experiments/pika-h3/chrome-download.json`. For example:
 
 ```bash
-CHROME_BINARY=/absolute/path/to/chrome node experiments/pika-h3/verify_preloaded.mjs
+CHROME_BINARY=/absolute/path/to/chrome node experiments/pika-h3/verify_preloaded.mjs experiments/pika-h3/pika-preloaded-five-video-comparison-20261102
 ```
 
 ## GPU replay requirements
